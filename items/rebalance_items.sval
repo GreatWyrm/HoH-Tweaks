@@ -2,7 +2,7 @@
 <dict>
     <dict name="arcane-dagger">
         <string name="name">Arcane Dagger</string>
-        <string name="desc">An ornate dagger with runes carved into it.\n+1 Magical Damage on Primary Attack\n5% Resistance Pierce</string>
+        <string name="desc">+1 Magical Damage on Primary Attack\n5% Resistance Pierce</string>
         <string name="quality">common</string>
         <int name="cost">250</int>
 
@@ -63,6 +63,31 @@
             <dict>
                 <string name="class">Modifiers::Experience</string>
                 <float name="mul">1.05</float>
+            </dict>
+        </array>
+    </dict>
+    <dict name="spiked-shield">
+        <string name="name">Spiked Shield</string>
+        <string name="desc">1% damage reduction\n+1 Physical Damage on Primary Attack</string>
+        <string name="quality">common</string>
+        <int name="cost">400</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>0 0 12 12</vec4>
+        </array>
+
+        <array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::Armor</string>
+                <float name="dmg-taken-mul">0.99</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::Damage</string>
+                <int name="physical-add">1</int>
             </dict>
         </array>
     </dict>
