@@ -34,6 +34,17 @@
 				<string name="ItemID">arcane-dagger</string>
 			</dict>
 		</array>
+		<array>
+			<string>SpawnItem</string>
+			<int>4</int>
+			<vec3>-16 -264 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="ItemID">curios-box-two</string>
+			</dict>
+		</array>
 	</array>
 	<array name="prefabs"></array>
 </dict>

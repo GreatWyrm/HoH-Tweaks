@@ -2,7 +2,7 @@
 <dict>
     <dict name="arcane-dagger">
         <string name="name">Arcane Dagger</string>
-        <string name="desc">An ornate dagger with runes carved into it.\n+1 Magical Damage on Primary Attack\n%5 Resistance Pierce</string>
+        <string name="desc">An ornate dagger with runes carved into it.\n+1 Magical Damage on Primary Attack\n5% Resistance Pierce</string>
         <string name="quality">common</string>
         <int name="cost">250</int>
 
@@ -10,7 +10,7 @@
         <bool name="can-attune">true</bool>
 
         <array name="icon">
-            <string>./rebalance_items.png</string>
+            <string>items/rebalance_items.png</string>
             <int>100</int><vec4>0 0 12 12</vec4>
         </array>
 
@@ -22,6 +22,47 @@
             <dict>
                 <string name="class">Modifiers::Damage</string>
                 <int name="magical-add">1</int>
+            </dict>
+        </array>
+    </dict>
+    <dict name="curios-box-two">
+        <string name="name">Curio's Box 2nd Edition</string>
+        <string name="desc">+0.1 Movement Speed.\n+2% Crit Chance and Evasion\n+10% Ore and Gold Gain\n+5% Experience Gain</string>
+        <string name="quality">common</string>
+        <int name="cost">250</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>0 0 12 12</vec4>
+        </array>
+
+        <array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::Speed</string>
+                <float name="movement">0.1</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::CriticalHit</string>
+                <float name="chance">0.02</float>
+            </dict>
+            <dict>
+				<string name="class">Modifiers::Evade</string>
+				<float name="chance">0.02</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::OreGain</string>
+                <float name="scale">1.1</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::GoldGain</string>
+                <float name="scale">1.1</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::Experience</string>
+                <float name="mul">1.05</float>
             </dict>
         </array>
     </dict>
