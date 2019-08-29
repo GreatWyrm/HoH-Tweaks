@@ -1,0 +1,28 @@
+<loader>AddItemFile</loader>
+<dict>
+    <dict name="arcane-dagger">
+        <string name="name">Arcane Dagger</string>
+        <string name="desc">An ornate dagger with runes carved into it.\n+1 Magical Damage on Primary Attack\n%5 Resistance Pierce</string>
+        <string name="quality">common</string>
+        <int name="cost">250</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+
+        <array name="icon">
+            <string>./rebalance_items.png</string>
+            <int>100</int><vec4>0 0 12 12</vec4>
+        </array>
+
+        <array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::ArmorPierce</string>
+                <float name="resistance">0.95</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::Damage</string>
+                <int name="magical-add">1</int>
+            </dict>
+        </array>
+    </dict>
+</dict>

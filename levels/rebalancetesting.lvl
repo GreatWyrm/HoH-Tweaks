@@ -1,0 +1,39 @@
+<dict>
+	<array name="tiles"></array>
+	<dict name="game-mode">
+		<string name="Class">TestLevel</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">system/default.env</string>
+	</dict>
+	<dict name="units">
+	</dict>
+	<array name="scripts">
+		<array><string>LevelStart</string><int>1</int><vec3>-128 -328 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>SpawnItem</string>
+			<int>2</int>
+			<vec3>-208 -256 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="ItemID">dragonscale-mail</string>
+				<bool name="Take">t</bool>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnItem</string>
+			<int>3</int>
+			<vec3>-8 -368 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="ItemID">arcane-dagger</string>
+			</dict>
+		</array>
+	</array>
+	<array name="prefabs"></array>
+</dict>
