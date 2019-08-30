@@ -36,7 +36,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>34 0 42 12</vec4>
+            <int>100</int><vec4>34 0 8 12</vec4>
         </array>
 
         <array name="modifiers">
@@ -77,7 +77,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>23 0 33 12</vec4>
+            <int>100</int><vec4>23 0 10 12</vec4>
         </array>
 
         <array name="modifiers">
@@ -102,7 +102,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>13 0 22 11</vec4>
+            <int>100</int><vec4>13 0 9 11</vec4>
         </array>
 
         <array name="modifiers">
@@ -116,6 +116,20 @@
                 <int name="amount">1</int>
             </dict>
         </dict>
+        </array>
+    </dict>
+    <dict name="paperclip">
+        <string name="name">Paperclip</string>
+        <string name="desc">20% chance not to consume a key when opening a chest</string>
+        <string name="quality">common</string>
+        <int name="cost">300</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>43 0 10 12</vec4>
         </array>
     </dict>
 </dict>

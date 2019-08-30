@@ -2,4 +2,17 @@
     <string name="name">HoH Rebalance</string>
     <string name="author">Giginss, Gamerace</string>
     <string name="description">A rework of various mechanics and mechanics, additional enemies, additonal items</string>
+
+    <array name="levels">
+    <dict>
+      <string name="name">Tester's Level</string>
+      <string name="description">Way of testing out the mod</string>
+      <string name="file">levels/rebalancetesting.lvl</string>
+    </dict>
+    </array>
+    <dict name="classmaps">
+    <array name="behaviors">
+        <array><string>Chest</string><string>RebalanceChest</string></array>
+    </array>
+    </dict>
 </dict>
