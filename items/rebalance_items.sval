@@ -149,7 +149,7 @@
         <array name="modifiers">
             <dict>
                 <string name="class">Modifiers::Damage</string>
-                <int name="physical-add">1</float>
+                <int name="physical-add">1</int>
             </dict>
             <dict>
                 <string name="class">Modifiers::OreGain</string>
