@@ -13,6 +13,7 @@
     <dict name="classmaps">
     <array name="behaviors">
         <array><string>Chest</string><string>RebalanceChest</string></array>
+        <array><string>Player</string><string>RebalancePlayer</string></array>
     </array>
     </dict>
 </dict>
