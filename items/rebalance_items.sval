@@ -132,7 +132,7 @@
             <int>100</int><vec4>43 0 10 12</vec4>
         </array>
     </dict>
-        <dict name="mining-hammer">
+    <dict name="mining-hammer">
         <string name="name">Mining Hammer</string>
         <string name="desc">+20% Ore Gain\n+1 Physical Damage on Primary Attack</string>
         <string name="quality">common</string>
@@ -156,5 +156,26 @@
                 <float name="scale">1.2</float>
             </dict>
         </array>
+    </dict>
+    <dict name="steel-toe-boots">
+        <string name="name">Steel Toe Boots</string>
+        <string name="desc">+10 Health\n+15% Damage Reduction against Traps</string>
+        <string name="quality">common</string>
+        <int name="cost">200</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>0 0 12 12</vec4>
+        </array>
+
+        <array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Stats</string>
+				<int name="health">15</int>
+			</dict>
+		</array>
     </dict>
 </dict>
