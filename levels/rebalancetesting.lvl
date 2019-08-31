@@ -8,109 +8,109 @@
 		<string name="environment">system/default.env</string>
 	</dict>
 	<dict name="units">
-		<array name="doodads/generic/chest_ace_buried.unit"><vec2>312 -432</vec2><int>38</int></array>
+		<array name="items/key_ace.unit"><vec2>128 -616</vec2><int>1</int><vec2>168 -608</vec2><int>2</int><vec2>112 -584</vec2><int>3</int></array>
+		<array name="items/key_gold.unit">
+			<vec2>-96 -592</vec2>
+			<int>49</int>
+			<vec2>-56 -576</vec2>
+			<int>43</int>
+			<vec2>-48 -608</vec2>
+			<int>44</int>
+			<vec2>-80 -608</vec2>
+			<int>45</int>
+			<vec2>-64 -592</vec2>
+			<int>46</int>
+			<vec2>-72 -568</vec2>
+			<int>47</int>
+			<vec2>-48 -592</vec2>
+			<int>48</int>
+		</array>
+		<array name="items/key_bronze.unit">
+			<vec2>-176 -552</vec2>
+			<int>15</int>
+			<vec2>-208 -600</vec2>
+			<int>13</int>
+			<vec2>-200 -552</vec2>
+			<int>14</int>
+			<vec2>-216 -544</vec2>
+			<int>16</int>
+			<vec2>-176 -576</vec2>
+			<int>17</int>
+			<vec2>-200 -568</vec2>
+			<int>18</int>
+		</array>
+		<array name="items/key_silver.unit">
+			<vec2>24 -584</vec2>
+			<int>4</int>
+			<vec2>48 -616</vec2>
+			<int>5</int>
+			<vec2>48 -568</vec2>
+			<int>6</int>
+			<vec2>16 -576</vec2>
+			<int>7</int>
+			<vec2>16 -616</vec2>
+			<int>9</int>
+			<vec2>40 -608</vec2>
+			<int>10</int>
+			<vec2>32 -584</vec2>
+			<int>11</int>
+			<vec2>16 -608</vec2>
+			<int>12</int>
+			<vec2>56 -592</vec2>
+			<int>8</int>
+		</array>
+		<array name="doodads/generic/chest_ace.unit"><vec2>280 -512</vec2><int>19</int><vec2>312 -512</vec2><int>20</int><vec2>320 -488</vec2><int>21</int><vec2>280 -488</vec2><int>22</int></array>
+		<array name="doodads/generic/chest_ace_buried.unit"><vec2>312 -432</vec2><int>36</int></array>
 		<array name="doodads/generic/chest_silver.unit">
-			<vec2>32 -520</vec2>
-			<int>55</int>
-			<vec2>24 -472</vec2>
-			<int>54</int>
-			<vec2>16 -528</vec2>
-			<int>53</int>
 			<vec2>-8 -472</vec2>
-			<int>57</int>
+			<int>33</int>
 			<vec2>32 -496</vec2>
-			<int>56</int>
+			<int>34</int>
+			<vec2>32 -520</vec2>
+			<int>35</int>
+			<vec2>24 -472</vec2>
+			<int>31</int>
+			<vec2>16 -528</vec2>
+			<int>32</int>
+		</array>
+		<array name="doodads/generic/chest_bronze.unit">
+			<vec2>-304 -448</vec2>
+			<int>27</int>
+			<vec2>-248 -472</vec2>
+			<int>28</int>
+			<vec2>-288 -496</vec2>
+			<int>29</int>
+			<vec2>-216 -488</vec2>
+			<int>30</int>
+			<vec2>-264 -504</vec2>
+			<int>23</int>
+			<vec2>-280 -472</vec2>
+			<int>24</int>
+			<vec2>-216 -456</vec2>
+			<int>25</int>
+			<vec2>-264 -448</vec2>
+			<int>26</int>
 		</array>
 		<array name="doodads/generic/chest_gold.unit">
 			<vec2>-64 -512</vec2>
-			<int>52</int>
-			<vec2>-56 -488</vec2>
-			<int>51</int>
+			<int>37</int>
 			<vec2>-80 -504</vec2>
-			<int>49</int>
+			<int>38</int>
 			<vec2>-88 -464</vec2>
-			<int>50</int>
-			<vec2>-56 -528</vec2>
-			<int>48</int>
-			<vec2>-88 -528</vec2>
-			<int>47</int>
-		</array>
-		<array name="doodads/generic/chest_ace.unit"><vec2>280 -488</vec2><int>37</int><vec2>320 -488</vec2><int>36</int><vec2>280 -512</vec2><int>34</int><vec2>312 -512</vec2><int>35</int></array>
-		<array name="doodads/generic/chest_bronze.unit">
-			<vec2>-264 -504</vec2>
-			<int>40</int>
-			<vec2>-288 -496</vec2>
 			<int>39</int>
-			<vec2>-248 -472</vec2>
-			<int>43</int>
-			<vec2>-304 -448</vec2>
-			<int>42</int>
-			<vec2>-264 -448</vec2>
-			<int>44</int>
-			<vec2>-216 -456</vec2>
-			<int>45</int>
-			<vec2>-216 -488</vec2>
-			<int>46</int>
-			<vec2>-280 -472</vec2>
+			<vec2>-56 -528</vec2>
+			<int>40</int>
+			<vec2>-88 -528</vec2>
 			<int>41</int>
-		</array>
-		<array name="items/key_bronze.unit">
-			<vec2>-208 -600</vec2>
-			<int>13</int>
-			<vec2>-176 -552</vec2>
-			<int>12</int>
-			<vec2>-216 -544</vec2>
-			<int>14</int>
-			<vec2>-176 -576</vec2>
-			<int>10</int>
-			<vec2>-200 -568</vec2>
-			<int>9</int>
-			<vec2>-200 -552</vec2>
-			<int>11</int>
-		</array>
-		<array name="items/key_silver.unit">
-			<vec2>16 -616</vec2>
-			<int>22</int>
-			<vec2>16 -576</vec2>
-			<int>30</int>
-			<vec2>48 -568</vec2>
-			<int>29</int>
-			<vec2>48 -616</vec2>
-			<int>23</int>
-			<vec2>24 -584</vec2>
-			<int>24</int>
-			<vec2>16 -608</vec2>
-			<int>25</int>
-			<vec2>56 -592</vec2>
-			<int>26</int>
-			<vec2>32 -584</vec2>
-			<int>27</int>
-			<vec2>40 -608</vec2>
-			<int>28</int>
-		</array>
-		<array name="items/key_ace.unit"><vec2>112 -584</vec2><int>32</int><vec2>168 -608</vec2><int>33</int><vec2>128 -616</vec2><int>31</int></array>
-		<array name="items/key_gold.unit">
-			<vec2>-56 -576</vec2>
-			<int>19</int>
-			<vec2>-96 -592</vec2>
-			<int>18</int>
-			<vec2>-48 -608</vec2>
-			<int>17</int>
-			<vec2>-80 -608</vec2>
-			<int>15</int>
-			<vec2>-64 -592</vec2>
-			<int>16</int>
-			<vec2>-72 -568</vec2>
-			<int>21</int>
-			<vec2>-48 -592</vec2>
-			<int>20</int>
+			<vec2>-56 -488</vec2>
+			<int>42</int>
 		</array>
 	</dict>
 	<array name="scripts">
-		<array><string>LevelStart</string><int>1</int><vec3>-128 -328 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>LevelStart</string><int>50</int><vec3>-128 -328 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
 		<array>
 			<string>SpawnItem</string>
-			<int>2</int>
+			<int>51</int>
 			<vec3>-208 -256 0</vec3>
 			<bool>t</bool>
 			<int>-1</int>
@@ -122,7 +122,7 @@
 		</array>
 		<array>
 			<string>SpawnItem</string>
-			<int>3</int>
+			<int>52</int>
 			<vec3>-8 -368 0</vec3>
 			<bool>t</bool>
 			<int>-1</int>
@@ -133,7 +133,7 @@
 		</array>
 		<array>
 			<string>SpawnItem</string>
-			<int>4</int>
+			<int>53</int>
 			<vec3>-16 -264 0</vec3>
 			<bool>t</bool>
 			<int>-1</int>
@@ -144,7 +144,7 @@
 		</array>
 		<array>
 			<string>SpawnItem</string>
-			<int>5</int>
+			<int>54</int>
 			<vec3>-112 -256 0</vec3>
 			<bool>t</bool>
 			<int>-1</int>
@@ -155,7 +155,7 @@
 		</array>
 		<array>
 			<string>SpawnItem</string>
-			<int>6</int>
+			<int>55</int>
 			<vec3>88 -320 0</vec3>
 			<bool>t</bool>
 			<int>-1</int>
@@ -166,7 +166,7 @@
 		</array>
 		<array>
 			<string>SpawnItem</string>
-			<int>7</int>
+			<int>56</int>
 			<vec3>88 -320 0</vec3>
 			<bool>t</bool>
 			<int>-1</int>
@@ -177,13 +177,25 @@
 		</array>
 		<array>
 			<string>SpawnItem</string>
-			<int>8</int>
+			<int>57</int>
 			<vec3>-224 -384 0</vec3>
 			<bool>t</bool>
 			<int>-1</int>
 			<bool>t</bool>
 			<dict>
 				<string name="ItemID">paperclip</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnItem</string>
+			<int>58</int>
+			<vec3>72 -408 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="ItemID">soul-taker</string>
+				<bool name="Take">t</bool>
 			</dict>
 		</array>
 	</array>
