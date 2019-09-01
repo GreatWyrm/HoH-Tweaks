@@ -134,7 +134,7 @@
     </dict>
     <dict name="mining-hammer">
         <string name="name">Mining Hammer</string>
-        <string name="desc">+20% Ore Gain\n+1 Physical Damage on Primary Attack</string>
+        <string name="desc">+20% Ore Gain\n+2 Physical Damage on Primary Attack</string>
         <string name="quality">common</string>
         <int name="cost">200</int>
 
@@ -149,7 +149,7 @@
         <array name="modifiers">
             <dict>
                 <string name="class">Modifiers::Damage</string>
-                <int name="physical-add">1</int>
+                <int name="physical-add">2</int>
             </dict>
             <dict>
                 <string name="class">Modifiers::OreGain</string>
@@ -161,7 +161,7 @@
         <string name="name">Steel Toe Boots</string>
         <string name="desc">+10 Health\n+15% Damage Reduction against Traps</string>
         <string name="quality">common</string>
-        <int name="cost">200</int>
+        <int name="cost">315</int>
 
         <bool name="has-blueprints">true</bool>
         <bool name="can-attune">true</bool>
@@ -174,7 +174,7 @@
         <array name="modifiers">
 			<dict>
 				<string name="class">Modifiers::Stats</string>
-				<int name="health">15</int>
+				<int name="health">10</int>
 			</dict>
 		</array>
     </dict>
