@@ -4,11 +4,11 @@ bool g_cvar_god = false;
 
 class RebalancePlayer : Player
 {
-	Player(UnitPtr unit, SValue& params)
+	RebalancePlayer(UnitPtr unit, SValue& params)
 	{
 		super(unit, params);
 	}
-}
+
 	
 	int Damage(DamageInfo dmg, vec2 pos, vec2 dir) override
 	{
@@ -209,54 +209,4 @@ class RebalancePlayer : Player
 		BroadcastNetDamage(dmg);
 		return dmgAmnt;
 	}
-
-	void NetDamage(DamageInfo dmg, vec2 pos, vec2 dir) override
-	{
-		this.Damage(dmg, pos, dir);
-	}
-
-	void BroadcastNetDamage(DamageInfo di)
-	{
-		int damager = 0;
-		if (di.Attacker !is null && di.Attacker.m_unit.IsDestroyed())
-			damager = di.Attacker.m_unit.GetId();
-
-		m_lastSentHP = m_record.hp;
-		(Network::Message("PlayerDamaged") << di.DamageType << damager << di.Damage << m_record.hp << di.Weapon).SendToAll();
-	}
-
-	void OnDeath(DamageInfo di, vec2 dir) override
-	{
-		PlayerBase::OnDeath(di, dir);
-
-		DisableModifiers();
-
-		auto gm = cast<Campaign>(g_gameMode);
-
-		Stats::Add("death-count", 1, m_record);
-
-		if (cast<Town>(gm) is null)
-			Stats::Add("floor-deaths-" + (gm.m_levelCount + 1), 1, m_record);
-
-		int killerPeer = -1;
-		
-		auto plyKiller = cast<PlayerBase>(di.Attacker);
-		if (plyKiller !is null)
-			killerPeer = plyKiller.m_record.peer;
-		
-		m_record.deaths++;
-		m_record.deathsTotal++;
-		(Network::Message("PlayerDied") << killerPeer << int(di.DamageType) << int(di.Damage) << di.Melee << di.Weapon).SendToAll();
-
-		PlayerRecord@ killerRecord;
-		if (plyKiller !is null)
-			@killerRecord = plyKiller.m_record;
-		else if (di.Attacker !is null)
-			cast<Campaign>(g_gameMode).m_townLocal.EnemyKilledPlayer(di.Attacker);	
-			
-		gm.PlayerDied(m_record, killerRecord, di);
-
-		auto hud = GetHUD();
-		if (hud !is null)
-			hud.OnDeath();
-	}
+}
