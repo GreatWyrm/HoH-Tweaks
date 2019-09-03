@@ -15,5 +15,8 @@
         <array><string>Chest</string><string>RebalanceChest</string></array>
         <array><string>Player</string><string>RebalancePlayer</string></array>
     </array>
+    <array name="upgrades">
+      <array><string>UpgradeStep</string><string>RebalanceUpgradeStep</string></array>
+    </array>
     </dict>
 </dict>

@@ -178,4 +178,43 @@
 			</dict>
 		</array>
     </dict>
+    <dict name="lucky-fork">
+        <string name="name">Lucky Fork</string>
+        <string name="desc">15% Crit Damage\n+1 Luck</string>
+        <string name="quality">uncommon</string>
+        <int name="cost">600</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>84 0 12 12</vec4>
+        </array>
+
+        <array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::CriticalMul</string>
+                <float name="mul">1.15</int>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::Luck</string>
+                <float name="add">1</int>
+            </dict>
+        </array>
+    </dict>
+    <dict name="shopping-coupon">
+        <string name="name">Shopping Coupon</string>
+        <string name="desc">The first item you buy in the shop is free.</string>
+        <string name="quality>common</string>
+        <int name="cost">400</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">false</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>72 0 12 12</vec4>
+        </array>
+
 </dict>

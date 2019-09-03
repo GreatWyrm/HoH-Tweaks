@@ -20,7 +20,7 @@ class RebalanceChest : Chest
 			}
             // Code for the Paperclip item
             auto record = GetLocalPlayerRecord();
-            if(record.items.find("paperclip") > -1) {
+            if(record !is null && record.items.find("paperclip") > -1) {
                 float paperclip_chance = .2f;
                 if(!roll_chance(player, paperclip_chance)) {
                    player.m_record.keys[m_lock]--;
