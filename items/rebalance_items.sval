@@ -164,7 +164,7 @@
         <int name="cost">315</int>
 
         <bool name="has-blueprints">true</bool>
-        <bool name="can-attune">true</bool>
+        <bool name="can-attune">false</bool>
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
@@ -195,18 +195,18 @@
         <array name="modifiers">
             <dict>
                 <string name="class">Modifiers::CriticalMul</string>
-                <float name="mul">1.15</int>
+                <float name="mul">1.15</float>
             </dict>
             <dict>
                 <string name="class">Modifiers::Luck</string>
-                <float name="add">1</int>
+                <float name="add">1</float>
             </dict>
         </array>
     </dict>
     <dict name="shopping-coupon">
         <string name="name">Shopping Coupon</string>
         <string name="desc">The first item you buy in the shop is free.</string>
-        <string name="quality>common</string>
+        <string name="quality">common</string>
         <int name="cost">400</int>
 
         <bool name="has-blueprints">true</bool>
@@ -216,5 +216,5 @@
             <string>items/rebalance_items.png</string>
             <int>100</int><vec4>72 0 12 12</vec4>
         </array>
-
+    </dict>
 </dict>

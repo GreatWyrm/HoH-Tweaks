@@ -219,7 +219,7 @@ class RebalancePlayer : Player
 	{ 
 		if (BlockBuff(buff, m_record.armorDef, m_record.armor))
 			return false;
-		if(debuffImmune && buff.m_buff.m_debuff) {
+		if(debuffImmune && buff.m_def.m_debuff) {
 			debuffImmune = false;
 			debuffImmuneTime = 5;
 			return false;
