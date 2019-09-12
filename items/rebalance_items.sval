@@ -265,4 +265,86 @@
 			</dict>
 		</dict>
 	</dict>
+    <dict name="curios-case-two">
+        <string name="name">Curio's Case 2nd Edition</string>
+        <string name="desc">+0.2 Movement Speed.\n+4% Crit Chance and Evasion\n+20% Ore and Gold Gain\n+10% Experience Gain</string>
+        <string name="quality">uncommon</string>
+        <int name="cost">800</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>24 14 12 12</vec4>
+        </array>
+
+        <array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::Speed</string>
+                <float name="movement">0.2</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::CriticalHit</string>
+                <float name="chance">0.04</float>
+            </dict>
+            <dict>
+				<string name="class">Modifiers::Evade</string>
+				<float name="chance">0.04</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::OreGain</string>
+                <float name="scale">1.2</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::GoldGain</string>
+                <float name="scale">1.2</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::Experience</string>
+                <float name="mul">1.1</float>
+            </dict>
+        </array>
+    </dict>
+    <dict name="curios-coffer-two">
+        <string name="name">Curio's Coffer 2nd Edition</string>
+        <string name="desc">+0.4 Movement Speed.\n+7% Crit Chance and Evasion\n+30% Ore and Gold Gain\n+20% Experience Gain</string>
+        <string name="quality">rare</string>
+        <int name="cost">3000</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>10 46 12 12</vec4>
+        </array>
+
+        <array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::Speed</string>
+                <float name="movement">0.4</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::CriticalHit</string>
+                <float name="chance">0.07</float>
+            </dict>
+            <dict>
+				<string name="class">Modifiers::Evade</string>
+				<float name="chance">0.07</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::OreGain</string>
+                <float name="scale">1.3</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::GoldGain</string>
+                <float name="scale">1.3</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::Experience</string>
+                <float name="mul">1.2</float>
+            </dict>
+        </array>
+    </dict>
 </dict>
