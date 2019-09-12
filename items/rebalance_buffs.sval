@@ -1,0 +1,16 @@
+<svals>
+    <dict name="warded-armor">
+        <int name="duration">5000</int>
+
+        <float name="dmg-taken-mul">0.9</float>
+    </dict>
+    <dict name="bloodied-blade">
+        <int name="duration">5000</int>
+
+        <dict name="modifier">
+            <string name="class">Modifiers::Damage</string>
+                <int name="physical-add">4</int>
+                <int name="magical-add">4</int>
+        </dict>
+    </dict>
+</svals>

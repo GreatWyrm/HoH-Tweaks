@@ -217,4 +217,52 @@
             <int>100</int><vec4>72 0 12 12</vec4>
         </array>
     </dict>
+    <dict name="warded-armor">
+		<string name="name">Warded Armor</string>
+		<string name="desc">Gain 10% damage reduction for 5 seconds when you are hit</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">600</int>
+
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">false</bool>
+		
+		<array name="icon">
+			<string>items/rebalance_items.png</string>
+			<int>100</int><vec4>72 14 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hurt</string>
+			<bool name="target-self">true</bool>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">items/rebalance_buffs.sval:warded-armor</string>
+			</dict>
+		</dict>
+	</dict>
+    <dict name="bloodied-blade">
+		<string name="name">Bloodied Blade</string>
+		<string name="desc">Gain +4 magical and physical damage on Primary Attack\n for 5 seconds when you are hit</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">600</int>
+
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">false</bool>
+		
+		<array name="icon">
+			<string>items/rebalance_items.png</string>
+			<int>100</int><vec4>48 14 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hurt</string>
+			<bool name="target-self">true</bool>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">items/rebalance_buffs.sval:bloodied-blade</string>
+			</dict>
+		</dict>
+	</dict>
 </dict>
