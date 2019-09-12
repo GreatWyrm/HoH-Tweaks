@@ -35,7 +35,7 @@ namespace Upgrades
 			else
 			{
 				if(record !is null && record.generalStoreItemsBought == 0 && record.items.find("shopping-coupon") != -1 && costOre == 0) {
-					record.runGold -= costGold;
+					// Item is free, do not deduct gold
 				} else {
 					record.runGold -= costGold;
 					record.runOre -= costOre;
