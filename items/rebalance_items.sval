@@ -372,7 +372,7 @@
     </dict>
     <dict name="heart-of-the-turrask">
         <string name="name">Heart of the Turrask</string>
-        <string name="desc">+100 HP\n+0.2 HP Regen per % of health missing</string>
+        <string name="desc">+100 HP\n+0.5 HP Regen per % of health missing</string>
         <string name="quality">legendary</string>
         <int name="cost">100000</int>
 
@@ -391,7 +391,7 @@
 			</dict>
             <dict>
 				<string name="class">Modifiers::SealOfRegenHealth</string>
-				    <float name="regen">1.2</float>
+				    <float name="regen">1.5</float>
                     <bool name="affect-health">true</bool>
                     <bool name="affect-mana">false</bool>
 			</dict>
