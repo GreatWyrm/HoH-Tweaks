@@ -8,7 +8,7 @@ namespace Upgrades
 			super(upgrade, params, level);
 		}
 
-		void PayForUpgrade(PlayerRecord@ record)
+		void PayForUpgrade(PlayerRecord@ record) override
 		{
 			if (!CanAfford(record))
 			{

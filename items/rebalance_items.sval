@@ -347,4 +347,54 @@
             </dict>
         </array>
     </dict>
+    <dict name="binding-ring-of-focus">
+        <string name="name">Binding Ring of Focus</string>
+        <string name="desc">Gain 0.1 mana regen per % health missing</string>
+        <string name="quality">uncommon</string>
+        <int name="cost">600</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">false</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>97 14 12 12</vec4>
+        </array>
+
+        <array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::SealOfRegenHealth</string>
+				    <float name="regen">1.1</float>
+                    <bool name="affect-health">false</bool>
+                    <bool name="affect-mana">true</bool>
+			</dict>
+		</array>
+    </dict>
+    <dict name="heart-of-the-turrask">
+        <string name="name">Heart of the Turrask</string>
+        <string name="desc">+100 HP\n+0.2 HP Regen per % of health missing</string>
+        <string name="quality">legendary</string>
+        <int name="cost">100000</int>
+
+        <bool name="has-blueprints">false</bool>
+        <bool name="can-attune">false</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>111 45 12 13</vec4>
+        </array>
+
+        <array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Stats</string>
+				    <int name="health">100</int>
+			</dict>
+            <dict>
+				<string name="class">Modifiers::SealOfRegenHealth</string>
+				    <float name="regen">1.2</float>
+                    <bool name="affect-health">true</bool>
+                    <bool name="affect-mana">false</bool>
+			</dict>
+		</array>
+    </dict>
 </dict>
