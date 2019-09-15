@@ -2,8 +2,8 @@
     <dict name="warded-armor">
         <int name="duration">5000</int>
         <float name="chance">1</float>
-		<int name="timeout">50</int>
-        <float name="dmg-taken-mul">0.9</float>
+		<int name="timeout">20000</int>
+        <float name="dmg-taken-mul">0.85</float>
     </dict>
     <dict name="bloodied-blade">
         <int name="duration">5000</int>
