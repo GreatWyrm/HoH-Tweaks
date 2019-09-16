@@ -66,6 +66,39 @@
             </dict>
         </array>
     </dict>
+    <dict name="bean-juice">
+        <string name="name">Bean Juice</string>
+        <string name="desc">+0.1 Speed\nSpawn a poison cloud upon using a potion</string>
+        <string name="quality">common</string>
+        <int name="cost">450</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+        <string name="required-flag">unlock_apothecary</string>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>0 0 12 12</vec4>
+        </array>
+        <array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::Speed</string>
+                <float name="movement">0.1</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::TriggerEffect</string>
+			    <string name="trigger">potion</string>
+			    <float name="chance">1</float>
+			
+			    <dict name="effect">
+				    <string name="class">SpawnUnit</string>
+				    <string name="unit">players/projectiles/plague_doctor_area.unit</string>
+				    <bool name="safe-spawn">false</bool>
+				    <int name="spawn-dist">0</int>
+			    </dict>
+            </dict>
+        </array>
+    </dict>
     <dict name="spiked-shield">
         <string name="name">Spiked Shield</string>
         <string name="desc">1% damage reduction\n+1 Physical Damage on Primary Attack</string>
@@ -241,6 +274,26 @@
 			</dict>
 		</dict>
 	</dict>
+    <dict name="hoarders-vest">
+		<string name="name">Hoarder's Vest</string>
+		<string name="desc">+0.2 Armor and Resistance per Item in inventory</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">700</int>
+
+        <bool name="has-blueprints">true</bool>
+		<bool name="can-attune">true</bool>
+		
+		<array name="icon">
+			<string>items/rebalance_items.png</string>
+			<int>100</int><vec4>0 0 12 12</vec4>
+		</array>
+
+    	<dict name="modifier">
+				<string name="class">Modifiers::Markham</string>
+				<float name="armor">0.2</float>
+				<float name="resistance">0.2</float>
+        </dict>
+    </dict>
     <dict name="bloodied-blade">
 		<string name="name">Bloodied Blade</string>
 		<string name="desc">Gain +4 magical and physical damage on Primary Attack\n for 5 seconds when you are hit</string>
@@ -418,9 +471,50 @@
 					<string name="buff">items/buffs.sval:frostbrand</string>
 				</dict>
         </dict>
-        
     </dict>
+    <dict name="pickaxe-of-power">
+        <string name="name">Ice Shield</string>
+        <string name="desc">Enemies that hit you are chilled</string>
+        <string name="quality">uncommon</string>
+        <int name="cost">600</int>
 
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>0 14 12 12</vec4>
+        </array>
+        <dict name="modifier">
+			<string name="class">Modifiers::OrePower</string>
+                <bool name="affect-health">true</bool>
+                <bool name="affect-mana">true</bool>
+                <float name="regen">1.01</float>
+                <int name="cap">250</int>
+        </dict>
+    </dict>
+    <dict name="ore-of-defense">
+		<string name="name">Orb of Defense</string>
+		<string name="desc">25% chance to block 20 Magical Damage</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">800</int>
+		
+		<bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>0 0 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Block</string>
+				<float name="chance">0.25</float>
+				<int name="magical">20</int>
+			</dict>
+		</array>
+	</dict>
     <dict name="wrath-of-the-grand-magus">
         <string name="name">Wrath of the Grand Magus</string>
         <string name="desc">Enemies that hit you are given the magebane debuff and take 40 magical damage\n+20 Resistance, +30 Skill Power</string>
