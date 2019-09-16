@@ -15,4 +15,15 @@
                 <int name="magical-add">4</int>
         </dict>
     </dict>
+    <dict name="deadly-compass">
+		<string name="name">Deadly Compass</string>
+		<string name="description">Your crits pierce through!</string>
+		<int name="duration">10</int>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::ArmorPierce</string>
+			<float name="resistance">0.5</float>
+			<float name="armor">0.5</float>
+		</dict>
+	</dict>
 </svals>
