@@ -523,7 +523,7 @@
                 <int name="cap">250</int>
         </dict>
     </dict>
-    <dict name="ore-of-defense">
+    <dict name="orb-of-defense">
 		<string name="name">Orb of Defense</string>
 		<string name="desc">25% chance to block 20 Magical Damage</string>
 		<string name="quality">uncommon</string>
@@ -533,7 +533,7 @@
         <bool name="can-attune">true</bool>
 		
 		<array name="icon">
-			<string>items/items.png</string>
+			<string>items/rebalance_items.png</string>
 			<int>100</int><vec4>0 0 12 12</vec4>
 		</array>
 
@@ -545,6 +545,19 @@
 			</dict>
 		</array>
 	</dict>
+    <dict name="shifting-clay">
+        <string name="name">Shifting Clay</string>
+        <string name="desc">+1 to all set bonuses</string>
+        <string name="quality">rare</string>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">false</bool>
+
+        <array name="icon">
+			<string>items/rebalance_items.png</string>
+			<int>100</int><vec4>0 0 12 12</vec4>
+		</array>
+    </dict>
     <dict name="wrath-of-the-grand-magus">
         <string name="name">Wrath of the Grand Magus</string>
         <string name="desc">Enemies that hit you are given the magebane debuff and take 40 magical damage\n+20 Resistance, +30 Skill Power</string>
