@@ -78,7 +78,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>0 0 12 12</vec4>
+            <int>100</int><vec4>96 0 12 12</vec4>
         </array>
         <array name="modifiers">
             <dict>
@@ -111,7 +111,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>0 0 12 12</vec4>
+            <int>100</int><vec4>60 14 12 12</vec4>
         </array>
         <array name="modifiers">
             <dict>
@@ -315,7 +315,7 @@
 		
 		<array name="icon">
 			<string>items/rebalance_items.png</string>
-			<int>100</int><vec4>0 0 12 12</vec4>
+			<int>100</int><vec4>108 28 12 12</vec4>
 		</array>
 
     	<dict name="modifier">
@@ -400,7 +400,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>10 46 12 12</vec4>
+            <int>100</int><vec4>72 28 12 12</vec4>
         </array>
 
         <array name="modifiers">
@@ -513,7 +513,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>0 14 12 12</vec4>
+            <int>100</int><vec4>12 28 12 12</vec4>
         </array>
         <dict name="modifier">
 			<string name="class">Modifiers::OrePower</string>
@@ -534,7 +534,7 @@
 		
 		<array name="icon">
 			<string>items/rebalance_items.png</string>
-			<int>100</int><vec4>0 0 12 12</vec4>
+			<int>100</int><vec4>36 14 12 12</vec4>
 		</array>
 
 		<array name="modifiers">
@@ -555,7 +555,7 @@
 
         <array name="icon">
 			<string>items/rebalance_items.png</string>
-			<int>100</int><vec4>0 0 12 12</vec4>
+			<int>100</int><vec4>0 28 12 12</vec4>
 		</array>
     </dict>
     <dict name="wrath-of-the-grand-magus">
@@ -569,7 +569,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>71 44 12 13</vec4>
+            <int>100</int><vec4>60 28 12 13</vec4>
         </array>
 
         <array name="modifiers">		
@@ -602,7 +602,7 @@
         </array>
     </dict>
     <dict name="devils-claws">
-        <string name="name">Devil's Claws</string>
+        <string name="name">Devil's Axe</string>
         <string name="desc">Crits Have 5% Lifesteal\n+100% Crit Damage</string>
         <string name="quality">epic</string>
         <int name="cost">50000</int>
@@ -612,7 +612,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>111 45 12 13</vec4>
+            <int>100</int><vec4>34 41 12 12</vec4>
         </array>
 
         <array name="modifiers">
@@ -638,7 +638,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>111 45 12 13</vec4>
+            <int>100</int><vec4>22 42 12 12</vec4>
         </array>
 
         <array name="modifiers">
