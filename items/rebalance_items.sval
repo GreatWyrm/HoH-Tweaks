@@ -503,8 +503,8 @@
         </dict>
     </dict>
     <dict name="pickaxe-of-power">
-        <string name="name">Ice Shield</string>
-        <string name="desc">Enemies that hit you are chilled</string>
+        <string name="name">Pickaxe of Power</string>
+        <string name="desc">Gain +0.01 health and mana regen per ore you have\nBonus caps at 250 Ore</string>
         <string name="quality">uncommon</string>
         <int name="cost">600</int>
 
@@ -519,7 +519,7 @@
 			<string name="class">Modifiers::OrePower</string>
                 <bool name="affect-health">true</bool>
                 <bool name="affect-mana">true</bool>
-                <float name="regen">1.01</float>
+                <float name="regen">0.01</float>
                 <int name="cap">250</int>
         </dict>
     </dict>
