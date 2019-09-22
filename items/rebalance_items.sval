@@ -523,6 +523,31 @@
                 <int name="cap">250</int>
         </dict>
     </dict>
+    <dict name="power-gem">
+        <string name="name">Power Gem</string>
+        <string name="desc">+30% buff duration\n+15% skill speed</string>
+        <string name="quality">rare</string>
+        <int name="cost">3000</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">true</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>0 0 12 12</vec4>
+        </array>
+
+        <array name="modifiers">
+            <dict>
+			    <string name="class">Modifiers::Speed</string>
+			    <float name="skill-mul">1.1</float>
+            </dict>
+            <dict>
+				<string name="class">Modifiers::BuffScaling</string>
+				<float name="buff-scale">1.3</float>
+            </dict>
+        </array>
+    </dict>
     <dict name="orb-of-defense">
 		<string name="name">Orb of Defense</string>
 		<string name="desc">25% chance to block 20 Magical Damage</string>
@@ -549,6 +574,7 @@
         <string name="name">Shifting Clay</string>
         <string name="desc">+1 to all set bonuses</string>
         <string name="quality">rare</string>
+        <int name="cost">3000</int>
 
         <bool name="has-blueprints">true</bool>
         <bool name="can-attune">false</bool>
