@@ -304,6 +304,31 @@
 			</dict>
 		</dict>
 	</dict>
+    <dict name="rock-of-recharge">
+		<string name="name">Rock of Recharge</string>
+		<string name="desc">5% chance for a skill to not cost mana\n5% chance for a skill to have a significantly reduced cooldown</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">600</int>
+
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">true</bool>
+		
+		<array name="icon">
+			<string>items/rebalance_items.png</string>
+			<int>100</int><vec4>0 0 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+            <dict>
+			    <string name="class">Modifiers::NoCostSpell</string>
+                <float name="chance">0.05</float>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::NoCooldownSpell</string>
+                <float name="chance">0.05</float>
+            </dict>
+		</array>
+	</dict>
     <dict name="hoarders-vest">
 		<string name="name">Hoarder's Vest</string>
 		<string name="desc">+0.2 Armor and Resistance per Item in inventory</string>
