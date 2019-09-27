@@ -107,7 +107,6 @@
 
         <bool name="has-blueprints">true</bool>
         <bool name="can-attune">true</bool>
-        <string name="required-flag">unlock_apothecary</string>
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
