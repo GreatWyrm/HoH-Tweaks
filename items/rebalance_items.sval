@@ -540,7 +540,7 @@
             <int>100</int><vec4>12 28 12 12</vec4>
         </array>
         <dict name="modifier">
-			<string name="class">Modifiers::OrePower</string>
+			<string name="class">Modifiers::OreRegen</string>
                 <bool name="affect-health">true</bool>
                 <bool name="affect-mana">true</bool>
                 <float name="regen">0.01</float>
