@@ -1,0 +1,42 @@
+<loader order="2">AddSetFile</loader>
+<array>
+    <dict>
+        <string name="name">Curio's Collection No. 2</string>
+
+        <array name="items">
+            <string>curios-box-two</string>
+            <string>curios-case-two</string>
+            <string>curios-coffer-two</string>
+        </array>
+
+        <dict name="3">
+            <string name="desc">+0.3 move speed, +5% evasion and crit chance\n+25% ore and gold gain, +15% exp gain</string>
+            <array name="modifiers">
+                <dict>
+                    <string name="class">Modifiers::Speed</string>
+                    <float name="movement">0.3</float>
+                </dict>
+                <dict>
+                    <string name="class">Modifiers::CriticalHit</string>
+                    <float name="chance">0.05</float>
+                </dict>
+                <dict>
+				    <string name="class">Modifiers::Evade</string>
+				    <float name="chance">0.05</float>
+                </dict>
+                <dict>
+                    <string name="class">Modifiers::OreGain</string>
+                    <float name="scale">1.25</float>
+                </dict>
+                <dict>
+                    <string name="class">Modifiers::GoldGain</string>
+                    <float name="scale">1.25</float>
+                </dict>
+                <dict>
+                    <string name="class">Modifiers::Experience</string>
+                    <float name="mul">1.15</float>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+</array>
