@@ -39,4 +39,44 @@
             </array>
         </dict>
     </dict>
+    <dict>
+        <string name="name">Hoarder's Collection</string>
+
+        <array name="items">
+            <string>pickaxe-of-power</string>
+            <string>hoarders-vest</string>
+            <string>paperclip</string>
+            <string>shopping-coupon</string>
+        </array>
+
+        <dict name="2">
+            <string name="desc">Keys give you Attack Power and Skill Power (Cap at 15 each)</string>
+            <array name="modifiers">
+                <dict>
+                    <string name="class">Modifiers::KeyPower</string>
+                    <int name="bronze-power">1</int>
+                    <int name="silver-power">2</int>
+                    <int name="gold-power">3</int>
+                    <int name="ace-power">5</int>
+                </dict>
+            </array>
+        </dict>
+        <dict name="4">
+            <string name="desc">Gain 1% damage per 1000 Gold (Cap at 100000)</string>
+            <array name="modifiers">
+                <dict>
+                    <string name="class">Modifiers::KeyPower</string>
+                    <int name="bronze-power">1</int>
+                    <int name="silver-power">2</int>
+                    <int name="gold-power">3</int>
+                    <int name="ace-power">5</int>
+                </dict>
+                <dict>
+                    <string name="class">Modifiers::GoldDamage</string>
+                    <float name="damage-rate">1000</float>
+                    <int name="cap">100000</int>
+                </dict>
+            </array>
+        </dict>
+    </dict>
 </array>
