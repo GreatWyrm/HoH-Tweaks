@@ -19,7 +19,7 @@ namespace Modifiers
             if(record is null) {
                 return totalPower;
             }
-            for(int i = 0; i < keyPower.length(); i++) {
+            for(uint i = 0; i < keyPower.length(); i++) {
                 int effectiveKeyPower = 0;
                 if(record.keys[i] < 0) {
                     continue;

@@ -651,6 +651,38 @@
 			</dict>
         </array>
     </dict>
+    <dict name="fury-of-the-earthshaker">
+        <string name="name">Fury of the Earthshaker</string>
+        <string name="desc">Earth spikes deal 50 physical damage in an area to enemies that damage you</string>
+        <string name="quality">rare</string>
+        <int name="cost">2500</int>
+
+        <bool name="has-blueprints">true</bool>
+        <bool name="can-attune">false</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>0 0 12 12</vec4>
+        </array>
+
+        <dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hurt</string>
+			<float name="chance">1</float>
+			<int name="timeout">50</int>
+			<bool name="target-self">false</bool>
+
+			<array name="effects">
+				<dict name="effect">
+					<string name="class">SpawnUnit</string>
+					<string name="unit">items/itemUnits/fury-of-the-earthshaker.unit</string>
+					<bool name="safe-spawn">false</bool>
+					<int name="spawn-dist">0</int>
+					<vec2 name="offset">0 0</vec2>
+				</dict>
+			</array>
+		</dict>
+    </dict>
     <dict name="devils-claws">
         <string name="name">Devil's Axe</string>
         <string name="desc">Crits Have 5% Lifesteal\n+100% Crit Damage</string>

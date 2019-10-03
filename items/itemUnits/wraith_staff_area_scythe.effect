@@ -1,0 +1,86 @@
+<effect layer="0" bounds="512 512">
+
+	<!-- <data> -->
+		<!-- <string name="gore">effects/gibs/gib_trap_bomb.sval</string> -->
+	<!-- </data>	 -->
+%// Shockwave
+
+	%//ExplosionCircle
+	<sprite looping="false" ulayer="0" origin="23 30" texture="items/itemUnits/wraith_staff_area_scythe.png" material="system/default.mats:bright">
+
+		<frame time="50"> 0 0 55 51</frame>
+		<frame time="50"> 55 0 55 51</frame>
+		<frame time="50"> 110 0 55 51</frame>
+		<frame time="50"> 165 0 55 51</frame>
+		<frame time="50"> 220 0 55 51</frame>
+		<frame time="50"> 0 51 55 51</frame>
+		<frame time="50"> 55 51 55 51</frame>
+		<frame time="50"> 110 51 55 51</frame>
+		<frame time="50"> 165 51 55 51</frame>
+		<frame time="50"> 220 51 55 51</frame>
+	</sprite>
+	<sprite looping="false" ulayer="0" origin="23 30" texture="items/itemUnits/wraith_staff_area_scythe.png" material="system/default.mats:shadow">
+
+		<frame time="50"> 0 102 55 51</frame>
+		<frame time="50"> 55 102 55 51</frame>
+		<frame time="50"> 110 102 55 51</frame>
+		<frame time="50"> 165 102 55 51</frame>
+		<frame time="50"> 220 102 55 51</frame>
+		<frame time="50"> 0 153 55 51</frame>
+		<frame time="50"> 55 153 55 51</frame>
+		<frame time="50"> 110 153 55 51</frame>
+		<frame time="50"> 165 153 55 51</frame>
+		<frame time="50"> 220 153 55 51</frame>
+	</sprite>
+		
+	
+	
+	%// FLASH
+	<light pos="0 0">
+		<sprite texture="system/light_concentrated_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		<length value="200" />
+		<overbright value="10" />
+		<looping value="false" />
+		<cast-shadows value="false" />
+		<shadow-cast-pos value="0 0" />
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		<size value="150*t" />
+		
+		<color-r value="t" />
+		<color-g value="t" />
+		<color-b value="t*2" />
+		<color-a value="0/255" />
+	</light>
+	
+	
+
+	<!-- %// Fade
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame time="0">0 0 0 0</frame>
+			<frame time="560">0 0 128 128</frame>
+		</sprite>
+		
+		<length value="100" />
+		
+		<looping value="false" />
+		
+		<cast-shadows value="false" />
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+
+		%//<size value="pow((sin((pow(t, 0.2))+1)), 800) * 400" />
+		
+		<size value="max(0,t*150)+10" />
+		
+		<color-r value="max(0,(1-t*1.2)" />
+		<color-g value="max(0,(1-t*1.2)" />
+		<color-b value="0" />
+		<color-a value="0/255" />
+	</light> -->
+</effect>

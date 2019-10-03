@@ -1,0 +1,35 @@
+<unit layer="-1">
+	<behavior class="DangerAreaBehavior">
+		<int name="freq">200</int>
+		<int name="ttl">5000</int>
+		
+		<int name="actor-filter">69</int>
+		<float name="self-dmg">0</float>
+		<float name="team-dmg">0</float>
+		<float name="enemy-dmg">1</float>
+		
+		<array name="effects">
+			<dict>
+				<string name="class">Damage</string>
+				<int name="physical">50</int>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+		</dict>
+	</behavior>
+
+
+	<scenes start="visible">
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="0 0" shoot-through="true" aim-through="true" radius="14" sensor="true" />
+			</collision>
+		</scene>
+	
+		<scene name="visible">
+			<scene src="shared" />
+			<effect src="items/itemUnits/wraith_staff_area_scythe.effect" />
+		</scene>
+	</scenes>
+</unit>
