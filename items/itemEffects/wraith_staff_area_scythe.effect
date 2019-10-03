@@ -6,7 +6,7 @@
 %// Shockwave
 
 	%//ExplosionCircle
-	<sprite looping="false" ulayer="0" origin="23 30" texture="items/itemUnits/wraith_staff_area_scythe.png" material="system/default.mats:bright">
+	<sprite looping="false" ulayer="0" origin="23 30" texture="items/itemEffects/wraith_staff_area_scythe.png" material="system/default.mats:bright">
 
 		<frame time="50"> 0 0 55 51</frame>
 		<frame time="50"> 55 0 55 51</frame>
@@ -19,7 +19,7 @@
 		<frame time="50"> 165 51 55 51</frame>
 		<frame time="50"> 220 51 55 51</frame>
 	</sprite>
-	<sprite looping="false" ulayer="0" origin="23 30" texture="items/itemUnits/wraith_staff_area_scythe.png" material="system/default.mats:shadow">
+	<sprite looping="false" ulayer="0" origin="23 30" texture="items/itemEffects/wraith_staff_area_scythe.png" material="system/default.mats:shadow">
 
 		<frame time="50"> 0 102 55 51</frame>
 		<frame time="50"> 55 102 55 51</frame>

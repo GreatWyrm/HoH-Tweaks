@@ -26,4 +26,11 @@
 			<float name="armor">0.5</float>
 		</dict>
 	</dict>
+    <dict name="tidebringer">
+        <float name="chance">1</float>
+		<int name="duration">5000</int>
+        <int name="timeout">100</int>
+		
+		<float name="speed-mul">0.6</float>
+	</dict>
 </svals>

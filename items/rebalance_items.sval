@@ -675,7 +675,7 @@
 			<array name="effects">
 				<dict name="effect">
 					<string name="class">SpawnUnit</string>
-					<string name="unit">items/itemUnits/fury-of-the-earthshaker.unit</string>
+					<string name="unit">items/itemEffects/fury-of-the-earthshaker.unit</string>
 					<bool name="safe-spawn">false</bool>
 					<int name="spawn-dist">0</int>
 					<vec2 name="offset">0 0</vec2>
@@ -708,6 +708,53 @@
                 <float name="mul">2</float>
             </dict>
         </array>
+    </dict>
+    <dict name="tidebringer">
+        <string name="name">Tidebringer</string>
+        <string name="desc">Every 10th auto attack shoots out a 50 hybrid damage wave that pushes enemies back and applies a 40% slow</string>
+        <string name="quality">epic</string>
+        <int name="cost">50000</int>
+
+        <bool name="has-blueprints">false</bool>
+        <bool name="can-attune">false</bool>
+
+        <array name="icon">
+            <string>items/rebalance_items.png</string>
+            <int>100</int><vec4>0 0 12 12</vec4>
+        </array>
+
+        <dict name="modifier">
+           <string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">attack</string>
+				<int name="counter">10</int>
+				<float name="chance">1</float>
+				
+				<bool name="target-self">true</bool>
+				
+				<array name="effects">
+					<dict>
+						<string name="class">Explode</string>
+						<string name="fx">items/itemEffects/combo_blast.effect</string>
+						<int name="radius">64</int>
+						<float name="dist-scaling">1000</float>
+						<array name="effects">
+							<dict>
+								<string name="class">Damage</string>
+                                <int name="physical">25</int>
+								<int name="magical">25</int>
+							</dict>
+                            <dict>
+                                <string name="class">ApplyBuff</string>
+				                <string name="buff">items/rebalance_buffs.sval:tidebringer</string>
+                            </dict>
+						</array>
+					</dict>
+                    <dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/player/combo/blast</string>
+					</dict>
+                </array>
+        </dict>
     </dict>
     <dict name="heart-of-the-turrask">
         <string name="name">Heart of the Turrask</string>

@@ -1,0 +1,118 @@
+<effect looping="false">
+	<param name="angle" default="0" />
+	<param name="height" default="0" />
+	<!-- 
+	<sprite looping="true" origin="4 4" texture="./fireball_2.png" material="system/default.mats:shadow"
+	
+		pos-x="0"
+		pos-y="0"
+	
+		angle="angle + pi">
+		
+		<frame time="50">0 11 13 7</frame>
+	</sprite> -->
+	
+	<sprite looping="false" origin="64 64" texture="./combo_blast.png" material="system/default.mats:projectile-player"
+	
+		pos-x="0"
+		pos-y="-height"
+		scale-x="0.8 + t*0.2"
+		scale-y="0.8 + t*0.2"
+	
+		angle="pi*2*rand(u+i*23) + t*0.1"
+		
+		color-a="0.5"
+		>
+		
+		<frame time="30">0 0 128 128</frame>
+		<frame time="40">128 0 128 128</frame>
+		<frame time="40">256 0 128 128</frame>
+		<frame time="40">384 0 128 128</frame>
+		<frame time="40">0 128 128 128</frame>
+		<frame time="40">128 128 128 128</frame>
+		<frame time="40">256 128 128 128</frame>
+		<frame time="40">384 128 128 128</frame>
+		<frame time="50">0 0 0 0</frame>
+	</sprite>
+	<sprite looping="false" origin="64 64" texture="./combo_blast.png" material="system/default.mats:glow-both-bright"
+	
+		pos-x="0"
+		pos-y="-height"
+		scale-x="0.8 + t*0.3"
+		scale-y="0.8 + t*0.3"
+	
+		angle="pi * t * 0.1"
+		color-a="0.2"
+		>
+		
+		<frame time="30">0 0 0 0</frame>
+		<frame time="30">0 0 128 128</frame>
+		<frame time="40">128 0 128 128</frame>
+		<frame time="40">256 0 128 128</frame>
+		<frame time="40">384 0 128 128</frame>
+		<frame time="40">0 128 128 128</frame>
+		<frame time="40">128 128 128 128</frame>
+		<frame time="40">256 128 128 128</frame>
+		<frame time="40">384 128 128 128</frame>
+		<frame time="20">0 0 0 0</frame>
+	</sprite>
+<!-- 	<sprite looping="false" origin="64 64" texture="./combo_blast.png" material="system/default.mats:bright-noxray"
+	
+		pos-x="0"
+		pos-y="-height"
+		scale-x="0.7 + t*0.4"
+		scale-y="0.7 + t*0.4"
+	
+		angle="pi*2 + t*0.1*rand(u+i*101)"
+		color-a="0.1"
+		>
+		
+		<frame time="50">0 0 0 0</frame>
+		<frame time="80">0 0 128 128</frame>
+		<frame time="70">128 0 128 128</frame>
+		<frame time="60">256 0 128 128</frame>
+		<frame time="60">384 0 128 128</frame>
+		<frame time="60">0 128 128 128</frame>
+		<frame time="50">128 128 128 128</frame>
+		<frame time="40">256 128 128 128</frame>
+		<frame time="40">384 128 128 128</frame>
+	</sprite> -->
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="100">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="false" />
+		<length value="100" />
+
+		<cast-shadows value="false" />
+
+		<size value="200" />
+
+		<color-r value="0.2" />
+		<color-g value="0.2" />
+		<color-b value="0.2" />
+		<color-a value="0"/>
+	</light>
+	
+	<light pos-x="0" pos-y="-height">
+		<sprite texture="system/light_L.png">
+			<frame time="500">0 0 128 128</frame>
+		</sprite>
+
+		<looping value="true" />
+		<length value="250" />
+
+		<cast-shadows value="false" />
+
+
+		<size value="120 * (1-t)" />
+
+		<color-r value="0.3" />
+		<color-g value="0" />
+		<color-b value="0.3" />
+		<color-a value="0"/>
+	</light>
+	
+</effect>

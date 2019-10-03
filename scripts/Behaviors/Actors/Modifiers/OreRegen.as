@@ -1,13 +1,13 @@
 namespace Modifiers
 {
-	class OrePower : Modifier
+	class OreRegen : Modifier
 	{
 		float rate;
 		bool affectHealth;
 		bool affectMana;
         int oreCap;
 	
-		OrePower(UnitPtr unit, SValue& params)
+		OreRegen(UnitPtr unit, SValue& params)
 		{		
 			affectHealth = GetParamBool(unit, params, "affect-health", false, false);
 			affectMana = GetParamBool(unit, params, "affect-mana", false, false);
