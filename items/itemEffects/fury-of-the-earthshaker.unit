@@ -29,7 +29,7 @@
 	
 		<scene name="visible">
 			<scene src="shared" />
-			<effect src="items/itemEffects/wraith_staff_area_scythe.effect" />
+			<effect src="items/itemEffects/earthshaker.effect" />
 		</scene>
 	</scenes>
 </unit>

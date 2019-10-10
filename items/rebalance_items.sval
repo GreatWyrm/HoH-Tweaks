@@ -662,7 +662,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>0 0 12 12</vec4>
+            <int>100</int><vec4>36 28 12 12</vec4>
         </array>
 
         <dict name="modifier">
@@ -720,7 +720,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>0 0 12 12</vec4>
+            <int>100</int><vec4>48 28 12 12</vec4>
         </array>
 
         <dict name="modifier">
