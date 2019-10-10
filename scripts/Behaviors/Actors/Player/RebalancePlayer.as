@@ -517,4 +517,54 @@ class RebalancePlayer : Player
 		
 		SendPlayerMove(dir);
 	}
+	int ForceDrinkPotion() override
+	{
+		float healAmnt = 50 * g_allModifiers.PotionHealMul(this);
+		float manaAmnt = 50 * g_allModifiers.PotionManaMul(this);
+		int charges = 1 + g_allModifiers.PotionCharges();
+
+		if (charges <= m_record.potionChargesUsed)
+			return 0;
+
+		m_record.potionChargesUsed++;
+		int heal = int((healAmnt + 0.5f) * g_allModifiers.AllHealthGainScale(this) / 2);
+		heal += m_record.MaxHealth() / 10;
+
+		NetHeal(heal);
+		(Network::Message("PlayerHealed") << int(healAmnt) << m_record.hp).SendToAll();
+		Stats::Add("amount-healed", heal, m_record);
+		AddFloatingText(FloatingTextType::PlayerHealed, "" + int(healAmnt + 0.5f), m_unit.GetPosition());
+
+		this.GiveMana(int(manaAmnt + 0.5f)/2);
+		this.GiveMana(m_record.MaxMana()/10);
+
+		PlaySound3D(Resources::GetSoundEvent("event:/player/drink_potion"), m_unit.GetPosition());
+		Stats::Add("potion-charges-used", 1, m_record);
+		g_allModifiers.TriggerEffects(this, null, Modifiers::EffectTrigger::DrinkPotion);
+
+		if (m_record.desertNewGamePlus > 0)
+		{
+			if (m_djinn.IsValid())
+			{
+				if (Network::IsServer())
+					m_djinn.Destroy();
+				m_djinn = UnitPtr();
+			}
+
+			if (m_djinnSpawnEffect.IsValid())
+			{
+				m_djinnSpawnEffect.Destroy();
+				m_djinnSpawnEffect = UnitPtr();
+			}
+
+			auto effect = Resources::GetEffect("players/summons/potion_djinn_spawn.effect");
+			m_djinnSpawnTime = effect.Length();
+			m_djinnSpawnEffect = PlayEffect(effect, m_unit.GetPosition());
+			m_djinnSpawnPos = m_unit.GetPosition();
+
+			(Network::Message("PlayerPotionDjinnBegin")).SendToAll();
+		}
+
+		return heal;
+	}
 }

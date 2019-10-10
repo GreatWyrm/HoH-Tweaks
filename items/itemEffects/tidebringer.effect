@@ -12,7 +12,7 @@
 		<frame time="50">0 11 13 7</frame>
 	</sprite> -->
 	
-	<sprite looping="false" origin="64 64" texture="./combo_blast.png" material="system/default.mats:projectile-player"
+	<sprite looping="false" origin="64 64" texture="./tidebringer.png" material="system/default.mats:projectile-player"
 	
 		pos-x="0"
 		pos-y="-height"
@@ -34,7 +34,7 @@
 		<frame time="40">384 128 128 128</frame>
 		<frame time="50">0 0 0 0</frame>
 	</sprite>
-	<sprite looping="false" origin="64 64" texture="./combo_blast.png" material="system/default.mats:glow-both-bright"
+	<sprite looping="false" origin="64 64" texture="./tidebringer.png" material="system/default.mats:glow-both-bright"
 	
 		pos-x="0"
 		pos-y="-height"
@@ -56,7 +56,7 @@
 		<frame time="40">384 128 128 128</frame>
 		<frame time="20">0 0 0 0</frame>
 	</sprite>
-<!-- 	<sprite looping="false" origin="64 64" texture="./combo_blast.png" material="system/default.mats:bright-noxray"
+<!-- 	<sprite looping="false" origin="64 64" texture="./tidebringer.png" material="system/default.mats:bright-noxray"
 	
 		pos-x="0"
 		pos-y="-height"

@@ -734,7 +734,7 @@
 				<array name="effects">
 					<dict>
 						<string name="class">Explode</string>
-						<string name="fx">items/itemEffects/combo_blast.effect</string>
+						<string name="fx">items/itemEffects/tidebringer.effect</string>
 						<int name="radius">64</int>
 						<float name="dist-scaling">1000</float>
 						<array name="effects">
