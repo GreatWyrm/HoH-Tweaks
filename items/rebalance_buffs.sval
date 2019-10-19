@@ -2,7 +2,7 @@
     <dict name="warded-armor">
         <int name="duration">5000</int>
         <float name="chance">1</float>
-		<int name="timeout">20000</int>
+		<int name="timeout">15000</int>
         <float name="dmg-taken-mul">0.85</float>
     </dict>
     <dict name="bloodied-blade">
@@ -16,15 +16,9 @@
         </dict>
     </dict>
     <dict name="deadly-compass">
-        <float name="chance">1</float>
-		<int name="duration">20</int>
-        <int name="timeout">10</int>
-		
-		<dict name="modifier">
-			<string name="class">Modifiers::ArmorPierce</string>
-			<float name="resistance">0.5</float>
-			<float name="armor">0.5</float>
-		</dict>
+		<int name="duration">3000</int>
+        <int name="timeout">7000</int>		
+		<float name="dmg-mul">1.25</float>
 	</dict>
     <dict name="tidebringer">
         <float name="chance">1</float>

@@ -101,7 +101,7 @@
     </dict>
     <dict name="deadly-compass">
       <string name="name">Deadly Compass</string>
-        <string name="desc">Crits ignore 50% of armor and resistance</string>
+        <string name="desc">Crits give you a 25% damage boost for 3 seconds. Cooldown of 7 seconds.</string>
         <string name="quality">common</string>
         <int name="cost">450</int>
 
@@ -119,7 +119,6 @@
 				<float name="chance">1</float>
 				
 				<bool name="target-self">true</bool>
-				<int name="timeout">500</int>
 
             	<dict name="effect">
 				    <string name="class">ApplyBuff</string>
@@ -281,7 +280,7 @@
     </dict>
     <dict name="warded-armor">
 		<string name="name">Warded Armor</string>
-		<string name="desc">Gain 15% damage reduction for 5 seconds when you are hit\nCooldown of 20 seconds</string>
+		<string name="desc">Gain 15% damage reduction for 5 seconds when you are hit\nCooldown of 15 seconds</string>
 		<string name="quality">uncommon</string>
 		<int name="cost">600</int>
 
