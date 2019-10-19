@@ -1,7 +1,7 @@
 <dict>
-    <string name="name">HoH Rebalance</string>
+    <string name="name">HoH Tweaks</string>
     <string name="author">Giginss, Gamerace</string>
-    <string name="description">A rework of various mechanics and mechanics, additional enemies, additonal items</string>
+    <string name="description">A rework of various mechanics and additonal items</string>
 
     <array name="levels">
     <dict>
