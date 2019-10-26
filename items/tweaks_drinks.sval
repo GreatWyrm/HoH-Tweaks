@@ -1,0 +1,29 @@
+<loader>AddDrinkFile</loader>
+<dict>
+    <dict name="fortified-well">
+		<string name="name">Fortified Well</string>
+		<string name="desc">You are immune to mana bleed and health bleed.\n-20% health regen.\n-20% mana regen</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">500</int>
+		
+		<array name="icon">
+			<string>gui/icons_tavern.png</string>
+			<int>100</int><vec4>48 48 24 24</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::BuffImmune</string>
+				<array name="tags">
+					<string>bleeding</string>
+				</array>
+			</dict>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Regen</string>
+				<float name="health-mul">0.8</float>
+                <float name="mana-mul">0.8</float>
+			</dict>
+		</array>
+	</dict>
+</dict>
