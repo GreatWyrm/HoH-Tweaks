@@ -151,9 +151,6 @@ namespace Upgrades
 			}
 			else
 			{
-				print("Paying for upgrade");
-				print("record.generalStoreItemsBought: " + record.generalStoreItemsBought);
-				print("record.items.find(shopping-coupon): " + record.items.find("shopping-coupon"));
 				if(record !is null && record.generalStoreItemsBought == 0 && record.items.find("shopping-coupon") != -1 && costOre == 0) {
 					// Item is free, do not deduct gold
 				} else {
