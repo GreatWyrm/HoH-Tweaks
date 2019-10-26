@@ -20,15 +20,7 @@ namespace Modifiers
                 return totalPower;
             }
             for(uint i = 0; i < keyPower.length(); i++) {
-                int effectiveKeyPower = 0;
-                if(record.keys[i] < 0) {
-                    continue;
-                }
-                if(record.keys[i] >= keyCap) {
-                    effectiveKeyPower = keyCap;
-                } else {
-                     effectiveKeyPower = record.keys[i];
-                }
+                int effectiveKeyPower = clamp(record.keys[i], 0, keyCap);
                 totalPower += (ivec2(1, 1) * effectiveKeyPower * keyPower[i]);
             }
             return totalPower;
