@@ -557,7 +557,7 @@
 
         <array name="icon">
             <string>items/rebalance_items.png</string>
-            <int>100</int><vec4>42 0 12 12</vec4>
+            <int>100</int><vec4>0 42 12 12</vec4>
         </array>
 
         <array name="modifiers">
