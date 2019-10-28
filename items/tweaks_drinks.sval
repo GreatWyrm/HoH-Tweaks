@@ -18,6 +18,12 @@
 					<string>bleeding</string>
 				</array>
 			</dict>
+			<dict>
+				<string name="class">Modifiers::BuffImmune</string>
+				<array name="tags">
+					<string>drain</string>
+				</array>
+			</dict>
 			
 			<dict name="modifier">
 				<string name="class">Modifiers::Regen</string>

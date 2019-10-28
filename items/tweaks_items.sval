@@ -563,7 +563,7 @@
         <array name="modifiers">
             <dict>
 			    <string name="class">Modifiers::Speed</string>
-			    <float name="skill-mul">1.1</float>
+			    <float name="skill-mul">1.15</float>
             </dict>
             <dict>
 				<string name="class">Modifiers::BuffScaling</string>
@@ -609,7 +609,7 @@
     </dict>
     <dict name="wrath-of-the-grand-magus">
         <string name="name">Wrath of the Grand Magus</string>
-        <string name="desc">Enemies that hit you are given the magebane debuff and take 40 magical damage\n+20 Resistance, +30 Skill Power</string>
+        <string name="desc">Enemies that hit you are given the magebane debuff and take 40 magical damage\n+20 Resistance, +20 Skill Power</string>
         <string name="quality">epic</string>
         <int name="cost">50000</int>
 
@@ -642,7 +642,7 @@
             </dict>
             <dict>
 			    <string name="class">Modifiers::Damage</string>
-			    <int name="spell-power">30</int>
+			    <int name="spell-power">20</int>
 			</dict>
 			<dict>
 			    <string name="class">Modifiers::Armor</string>

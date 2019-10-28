@@ -1,0 +1,1173 @@
+<loader>AddItemFile</loader>
+<dict>
+
+	<dict name="amulet-of-resistance">
+		<string name="name">.item.amulet-of-resistance.name</string>
+		<string name="desc">.item.amulet-of-resistance.desc?res=5</string>
+		<string name="quality">common</string>
+		<int name="cost">350</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>24 0 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<int name="resistance">5</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="apothecarys-herbs">
+		<string name="name">.item.apothecarys-herbs.name</string>
+		<string name="desc">.item.apothecarys-herbs.desc?mspeed=50&dur=5</string>
+		<string name="quality">common</string>
+		<int name="cost">150</int>
+
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">false</bool>
+		<string name="required-flag">unlock_apothecary</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>60 0 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">potion</string>
+			<bool name="target-self">true</bool>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">items/buffs.sval:apothecarys-herbs</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="blackjack">
+		<string name="name">.item.blackjack.name</string>
+		<string name="desc">.item.blackjack.desc?chance=10&dur=2</string>
+		<string name="quality">common</string>
+		<int name="cost">350</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>12 48 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hit</string>
+			<float name="chance">0.1</float>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">items/buffs.sval:blackjack</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="book-of-enlightenment">
+		<string name="name">.item.book-of-enlightenment.name</string>
+		<string name="desc">.item.book-of-enlightenment.desc?exp=20</string>
+		<string name="quality">common</string>
+		<int name="cost">150</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>96 12 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Experience</string>
+				<float name="mul">1.2</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="boots-of-speed">
+		<string name="name">.item.boots-of-speed.name</string>
+		<string name="desc">.item.boots-of-speed.desc?mspeed=0.2</string>
+		<string name="quality">common</string>
+		<int name="cost">250</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>48 180 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Speed</string>
+				<float name="movement">0.2</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="boots-of-speed-2">
+		<string name="name">.item.boots-of-speed-2.name</string>
+		<string name="desc">.item.boots-of-speed.desc?mspeed=0.2</string>
+		<string name="quality">common</string>
+		<int name="cost">250</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>96 24 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Speed</string>
+				<float name="movement">0.2</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="broad-sword">
+		<string name="name">.item.broad-sword.name</string>
+		<string name="desc">.item.broad-sword.desc?atk=10</string>
+		<string name="quality">common</string>
+		<int name="cost">250</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>12 120 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="attack-power">10</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="cape-of-withdrawal">
+		<string name="name">.item.cape-of-withdrawal.name</string>
+		<string name="desc">.item.cape-of-withdrawal.desc?mspeed=33&dur=3</string>
+		<string name="quality">common</string>
+		<int name="cost">275</int>
+
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">false</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>24 36 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hurt</string>
+			<bool name="target-self">true</bool>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">items/buffs.sval:cape-of-withdrawal</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="circlet-of-willpower">
+		<string name="name">.item.circlet-of-willpower.name</string>
+		<string name="desc">.item.circlet-of-willpower.desc?health=50&scost=25</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>60 36 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::HealthFilter</string>
+			<float name="below">0.5</float>
+			<dict name="modifier">
+				<string name="class">Modifiers::SpellCost</string>
+				<float name="mana-mul">0.75</float>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="chainmail">
+		<string name="name">.item.chainmail.name</string>
+		<string name="desc">.item.chainmail.desc?armor=5</string>
+		<string name="quality">common</string>
+		<int name="cost">225</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>108 0 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<int name="armor">5</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="coated-arrow">
+		<string name="name">.item.coated-arrow.name</string>
+		<string name="desc">.item.coated-arrow.desc?chance=20&dur=4</string>
+		<string name="quality">common</string>
+		<int name="cost">250</int>
+		
+		<bool name="has-blueprints">true</bool>
+		<string name="dlc">pop</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>60 240 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hit</string>
+			<float name="chance">0.2</float>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">items/buffs.sval:poison</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="cowl-of-protection">
+		<string name="name">.item.cowl-of-protection.name</string>
+		<string name="desc">.item.cowl-of-protection.desc?chance=25&block=5</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>36 48 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Block</string>
+				<float name="chance">0.25</float>
+				<int name="magical">5</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="curios-box">
+		<string name="name">.item.curios-box.name</string>
+		<string name="desc">.item.curios-box.desc?stats=+5&power=+3&armor=+2</string>
+		<string name="quality">common</string>
+		<int name="cost">400</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>24 192 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Stats</string>
+				<int name="health">5</int>
+				<int name="mana">5</int>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="attack-power">3</int>
+				<int name="spell-power">3</int>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<int name="armor">2</int>
+				<int name="resistance">2</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="defenders-halberd">
+		<string name="name">.item.defenders-halberd.name</string>
+		<string name="desc">.item.defenders-halberd.desc?dur=2</string>
+		<string name="quality">common</string>
+		<int name="cost">350</int>
+
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">false</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>36 60 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hurt</string>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:disarm</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="enchanted-dirk">
+		<string name="name">.item.enchanted-dirk.name</string>
+		<string name="desc">.item.enchanted-dirk.desc?dmg=1</string>
+		<string name="quality">common</string>
+		<int name="cost">250</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>108 132 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="physical-add">1</int>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="magical-add">1</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="firm-buckler">
+		<string name="name">.item.firm-buckler.name</string>
+		<string name="desc">.item.firm-buckler.desc?chance=25&block=5</string>
+		<string name="quality">common</string>
+		<int name="cost">250</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>48 96 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Block</string>
+				<float name="chance">0.25</float>
+				<int name="physical">5</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="gladiators-net">
+		<string name="name">.item.gladiators-net.name</string>
+		<string name="desc">.item.gladiators-net.desc?chance=20&dur=3</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>0 72 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">hit</string>
+			<float name="chance">0.2</float>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">actors/buffs.sval:disarm</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="glowing-staff">
+		<string name="name">.item.glowing-staff.name</string>
+		<string name="desc">.item.glowing-staff.desc?power=+5&dmg=+1</string>
+		<string name="quality">common</string>
+		<int name="cost">350</int>
+		
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>12 204 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="spell-power">5</int>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="magical-add">1</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="great-helm">
+		<string name="name">.item.great-helm.name</string>
+		<string name="desc">.item.great-helm.desc?armor=7</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>72 60 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<int name="armor">7</int>
+			</dict>
+		</array>
+	</dict>
+
+	<dict name="greaves-of-the-barbarian">
+		<string name="name">.item.greaves-of-the-barbarian.name</string>
+		<string name="desc">.item.greaves-of-the-barbarian.desc?chance=10&mspeed=20&dur=3</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">false</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>108 144 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">kill</string>
+			<float name="chance">1</float>
+			<bool name="target-self">true</bool>
+			<dict name="effect">
+				<string name="class">ApplyBuff</string>
+				<string name="buff">items/buffs.sval:greaves-of-the-barbarian</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="heavy-gauntlets">
+		<string name="name">.item.heavy-gauntlets.name</string>
+		<string name="desc">.item.heavy-gauntlets.desc?health=15</string>
+		<string name="quality">common</string>
+		<int name="cost">175</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>12 60 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Stats</string>
+				<int name="health">15</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="lesser-sphere-of-life">
+		<string name="name">.item.lesser-sphere-of-life.name</string>
+		<string name="desc">.item.lesser-sphere-of-life.desc?hregen=0.75</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<string name="required-flag">unlock_combo</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>60 144 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Combo</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Regen</string>
+					<float name="health">0.75</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="lesser-sphere-of-mana">
+		<string name="name">.item.lesser-sphere-of-mana.name</string>
+		<string name="desc">.item.lesser-sphere-of-mana.desc?mregen=1.5</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<string name="required-flag">unlock_combo</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>96 132 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Combo</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Regen</string>
+					<float name="mana">1.5</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+
+	<dict name="lesser-sphere-of-time">
+		<string name="name">.item.lesser-sphere-of-time.name</string>
+		<string name="desc">.item.lesser-sphere-of-time.desc?dur=0.5</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+
+		<bool name="has-blueprints">true</bool>
+		<string name="required-flag">unlock_combo</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>24 144 12 12</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::Combo</string>
+			<int name="maintain-time">500</int>
+		</dict>
+	</dict>
+
+	<dict name="life-stone">
+		<string name="name">.item.life-stone.name</string>
+		<string name="desc">.item.life-stone.desc?chance=15</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>108 108 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">kill</string>
+			<float name="chance">0.15</float>
+			<bool name="target-self">true</bool>
+			<dict name="effect">
+				<string name="class">Heal</string>
+				<int name="heal">1</int>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="lucky-charm">
+		<string name="name">.item.lucky-charm.name</string>
+		<string name="desc">.item.lucky-charm.desc?luck=+1&gain=10</string>
+		<string name="quality">common</string>
+		<int name="cost">400</int>
+		
+		<bool name="has-blueprints">true</bool>
+
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>48 240 12 12</vec4>
+		</array>
+		
+		<array name="modifiers">
+			<dict name="modifier">
+				<string name="class">Modifiers::GoldGain</string>
+				<float name="scale">1.1</float>
+			</dict>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Luck</string>
+				<float name="add">1</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="mail-of-thorns">
+		<string name="name">.item.mail-of-thorns.name</string>
+		<string name="desc">.item.mail-of-thorns.desc?return=15&armor=2</string>
+		<string name="quality">common</string>
+		<int name="cost">275</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>0 12 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="self-fx">effects/players/thorns.effect</string>
+				<string name="trigger">hurt</string>
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">15</int>
+				</dict>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<int name="armor">2</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="mage-robe">
+		<string name="name">.item.mage-robe.name</string>
+		<string name="desc">.item.mage-robe.desc?mana=20</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>48 84 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Stats</string>
+				<int name="mana">20</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="mana-stone">
+		<string name="name">.item.mana-stone.name</string>
+		<string name="desc">.item.mana-stone.desc?chance=30</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>0 120 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">kill</string>
+			<float name="chance">0.3</float>
+			<bool name="target-self">true</bool>
+			<dict name="effect">
+				<string name="class">GiveMana</string>
+				<int name="mana">1</int>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict name="markhams-purse">
+		<string name="name">.item.markhams-purse.name</string>
+		<string name="desc">.item.markhams-purse.desc?gain=+1</string>
+		<string name="quality">common</string>
+		<int name="cost">350</int>
+		
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>60 192 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::Markham</string>
+			<float name="gold-scale">0.01</float>
+		</dict>
+	</dict>
+	
+	<dict name="monster-pamphlet-aberration">
+		<string name="name">.item.monster-pamphlet-aberration.name</string>
+		<string name="desc">.item.monster-pamphlet-aberration.desc?exp=10&dmg=10</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>108 12 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::EnemyTypeFilter</string>
+				<string name="type">aberration</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Experience</string>
+					<float name="mul">1.1</float>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::EnemyTypeFilter</string>
+				<string name="type">aberration</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Damage</string>
+					<float name="mul">1.1</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="monster-pamphlet-beast">
+		<string name="name">.item.monster-pamphlet-beast.name</string>
+		<string name="desc">.item.monster-pamphlet-beast.desc?exp=10&dmg=10</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>0 24 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::EnemyTypeFilter</string>
+				<string name="type">beast</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Experience</string>
+					<float name="mul">1.1</float>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::EnemyTypeFilter</string>
+				<string name="type">beast</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Damage</string>
+					<float name="mul">1.1</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="monster-pamphlet-construct">
+		<string name="name">.item.monster-pamphlet-construct.name</string>
+		<string name="desc">.item.monster-pamphlet-construct.desc?exp=10&dmg=10</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>12 24 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::EnemyTypeFilter</string>
+				<string name="type">construct</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Experience</string>
+					<float name="mul">1.1</float>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::EnemyTypeFilter</string>
+				<string name="type">construct</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Damage</string>
+					<float name="mul">1.1</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="monster-pamphlet-undead">
+		<string name="name">.item.monster-pamphlet-undead.name</string>
+		<string name="desc">.item.monster-pamphlet-undead.desc?exp=10&dmg=10</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>24 24 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::EnemyTypeFilter</string>
+				<string name="type">undead</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Experience</string>
+					<float name="mul">1.1</float>
+				</dict>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::EnemyTypeFilter</string>
+				<string name="type">undead</string>
+				<dict name="modifier">
+					<string name="class">Modifiers::Damage</string>
+					<float name="mul">1.1</float>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="pot-helm">
+		<string name="name">.item.pot-helm.name</string>
+		<string name="desc">.item.pot-helm.desc?chance=10</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+		
+		<bool name="has-blueprints">true</bool>
+		<string name="dlc">pop</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>36 240 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::BlockProjectile</string>
+			<int name="arc">360</int>
+			<float name="chance">0.1</float>
+		</dict>
+	</dict>
+
+	<dict name="ring-health">
+		<string name="name">.item.ring-health.name</string>
+		<string name="desc">.item.ring-health.desc?hregen=0.2</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>72 72 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Regen</string>
+				<float name="health">0.2</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="ring-mana">
+		<string name="name">.item.ring-mana.name</string>
+		<string name="desc">.item.ring-mana.desc?mregen=0.4</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>84 72 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Regen</string>
+				<float name="mana">0.4</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="ring-of-rejuvenation">
+		<string name="name">.item.ring-of-rejuvenation.name</string>
+		<string name="desc">.item.ring-of-rejuvenation.desc?hregen=0.1&mregen=0.2</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>96 72 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Regen</string>
+				<float name="health">0.1</float>
+				<float name="mana">0.2</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="sandals-swiftness">
+		<string name="name">.item.sandals-swiftness.name</string>
+		<string name="desc">.item.sandals-swiftness.desc?mspeed=0.1&evasion=3</string>
+		<string name="quality">common</string>
+		<int name="cost">225</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>72 84 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Speed</string>
+				<float name="movement">0.1</float>
+			</dict>
+			
+			<dict>
+				<string name="class">Modifiers::Evade</string>
+				<float name="chance">0.03</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="scroll-of-magic-missile-a">
+		<string name="name">.item.scroll-of-magic-missile-a.name</string>
+		<string name="desc">.item.scroll-of-magic-missile-a.desc?dmg=25</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+		
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">false</bool>
+
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>12 96 12 12</vec4>
+		</array>
+	</dict>
+	
+	<dict name="scroll-of-magic-missile-b">
+		<string name="name">.item.scroll-of-magic-missile-b.name</string>
+		<string name="desc">.item.scroll-of-magic-missile-b.desc?dmg=25</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+		
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">false</bool>
+
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>0 192 12 12</vec4>
+		</array>
+	</dict>
+	
+	<dict name="serrated-scimitar">
+		<string name="name">.item.serrated-scimitar.name</string>
+		<string name="desc">.item.serrated-scimitar.desc?chance=2.5</string>
+		<string name="quality">common</string>
+		<int name="cost">350</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>108 84 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::CriticalHit</string>
+			<float name="chance">0.025</float>
+		</dict>
+	</dict>
+	
+	<dict name="slippery-cloak">
+		<string name="name">.item.slippery-cloak.name</string>
+		<string name="desc">.item.slippery-cloak.desc?evasion=6</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>72 36 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Evade</string>
+				<float name="chance">0.06</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="spell-book">
+		<string name="name">.item.spell-book.name</string>
+		<string name="desc">.item.spell-book.desc?spell=10</string>
+		<string name="quality">common</string>
+		<int name="cost">275</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>48 24 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="spell-power">10</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="spiked-flail">
+		<string name="name">.item.spiked-flail.name</string>
+		<string name="desc">.item.spiked-flail.desc?dmg=3</string>
+		<string name="quality">common</string>
+		<int name="cost">325</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>0 60 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="physical-add">3</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="steady-greaves">
+		<string name="name">.item.steady-greaves.name</string>
+		<string name="desc">.item.steady-greaves.desc?armor=3&health=10</string>
+		<string name="quality">common</string>
+		<int name="cost">200</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>24 60 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Armor</string>
+				<int name="armor">3</int>
+			</dict>
+			<dict>
+				<string name="class">Modifiers::Stats</string>
+				<int name="health">10</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="stiletto">
+		<string name="name">.item.stiletto.name</string>
+		<string name="desc">.item.stiletto.desc?pierce=10</string>
+		<string name="quality">common</string>
+		<int name="cost">325</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>84 108 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::ArmorPierce</string>
+				<float name="armor">0.9</float>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="sturdy-belt">
+		<string name="name">.item.sturdy-belt.name</string>
+		<string name="desc">.item.sturdy-belt.desc?health=15</string>
+		<string name="quality">common</string>
+		<int name="cost">175</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>84 12 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Stats</string>
+				<int name="health">15</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="vendors-coin">
+		<string name="name">.item.vendors-coin.name</string>
+		<string name="desc">.item.vendors-coin.desc?price=25</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+
+		<!-- <bool name="buy-in-dungeon">false</bool> -->
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">false</bool>
+		<string name="blocked-flag">in_survival</string>
+
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>24 48 12 12</vec4>
+		</array>
+	</dict>
+	
+	<dict name="wizards-wand">
+		<string name="name">.item.wizards-wand.name</string>
+		<string name="desc">.item.wizards-wand.desc?dmg=2</string>
+		<string name="quality">common</string>
+		<int name="cost">300</int>
+
+		<bool name="has-blueprints">true</bool>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>12 132 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="magical-add">2</int>
+			</dict>
+		</array>
+	</dict>
+</dict>
