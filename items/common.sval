@@ -183,7 +183,7 @@
 	
 	<dict name="circlet-of-willpower">
 		<string name="name">.item.circlet-of-willpower.name</string>
-		<string name="desc">.item.circlet-of-willpower.desc?health=50&scost=25</string>
+		<string name="desc">.item.circlet-of-willpower.desc?health=50&regen=2</string>
 		<string name="quality">common</string>
 		<int name="cost">200</int>
 
@@ -198,8 +198,8 @@
 			<string name="class">Modifiers::HealthFilter</string>
 			<float name="below">0.5</float>
 			<dict name="modifier">
-				<string name="class">Modifiers::SpellCost</string>
-				<float name="mana-mul">0.75</float>
+				<string name="class">Modifiers::Regen</string>
+				<float name="mana">2</float>
 			</dict>
 		</dict>
 	</dict>
@@ -956,7 +956,7 @@
 	
 	<dict name="scroll-of-magic-missile-a">
 		<string name="name">.item.scroll-of-magic-missile-a.name</string>
-		<string name="desc">.item.scroll-of-magic-missile-a.desc?dmg=25</string>
+		<string name="desc">.item.scroll-of-magic-missile-a.desc?dmg=25&spell=5</string>
 		<string name="quality">common</string>
 		<int name="cost">300</int>
 		
@@ -967,11 +967,17 @@
 			<string>items/items.png</string>
 			<int>100</int><vec4>12 96 12 12</vec4>
 		</array>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="spell-power">5</int>
+			</dict>
+		</array>
 	</dict>
 	
 	<dict name="scroll-of-magic-missile-b">
 		<string name="name">.item.scroll-of-magic-missile-b.name</string>
-		<string name="desc">.item.scroll-of-magic-missile-b.desc?dmg=25</string>
+		<string name="desc">.item.scroll-of-magic-missile-b.desc?dmg=25&respierce=5</string>
 		<string name="quality">common</string>
 		<int name="cost">300</int>
 		
@@ -981,6 +987,12 @@
 		<array name="icon">
 			<string>items/items.png</string>
 			<int>100</int><vec4>0 192 12 12</vec4>
+		</array>
+		<array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::ArmorPierce</string>
+                <float name="resistance">0.95</float>
+            </dict>
 		</array>
 	</dict>
 	

@@ -1,0 +1,940 @@
+<loader order="2">AddSetFile</loader>
+<array>
+	<dict>
+		<string name="name">.item.sets.fire-and-ice.name</string>
+		
+		<array name="items">
+			<string>flametongue</string>
+			<string>frostbrand</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.fire-and-ice.desc?dmg=10</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Damage</string>
+				<int name="magical-add">10</int>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.stones-of-midas.name</string>
+		
+		<array name="items">
+			<string>life-stone</string>
+			<string>mana-stone</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.stones-of-midas.desc?gold=2</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">kill</string>
+				<bool name="target-self">true</bool>
+				<dict name="effect">
+					<string name="class">GiveGold</string>
+					<int name="amount">2</int>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+	
+	
+	<dict>
+		<string name="name">.item.sets.monster-brochure.name</string>
+		
+		<array name="items">
+			<string>monster-pamphlet-aberration</string>
+			<string>monster-pamphlet-beast</string>
+			<string>monster-pamphlet-construct</string>
+			<string>monster-pamphlet-undead</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.monster-brochure.desc?dmg=5</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Damage</string>
+				<float name="mul">1.05</float>
+			</dict>
+		</dict>
+		<dict name="3">
+			<string name="desc">.item.sets.monster-brochure.desc?dmg=5</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Damage</string>
+				<float name="mul">1.10</float>
+			</dict>
+		</dict>
+		<dict name="4">
+			<string name="desc">.item.sets.monster-brochure.desc?dmg=5</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Damage</string>
+				<float name="mul">1.15</float>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.monster-encyclopedia.name</string>
+		
+		<array name="items">
+			<string>monster-manual-aberration</string>
+			<string>monster-manual-beast</string>
+			<string>monster-manual-construct</string>
+			<string>monster-manual-undead</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.monster-encyclopedia.desc?dmg=10</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Damage</string>
+				<float name="mul">1.1</float>
+			</dict>
+		</dict>
+		<dict name="3">
+			<string name="desc">.item.sets.monster-encyclopedia.desc?dmg=10</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Damage</string>
+				<float name="mul">1.2</float>
+			</dict>
+		</dict>
+		<dict name="4">
+			<string name="desc">.item.sets.monster-encyclopedia.desc?dmg=10</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Damage</string>
+				<float name="mul">1.3</float>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.kings-regalia.name</string>
+		
+		<array name="items">
+			<string>amulet-of-kings</string>
+			<string>armor-of-kings</string>
+			<string>crown-of-kings</string>
+			<string>scepter-of-kings</string>
+			<string>sword-kings</string>
+		</array>
+		
+		<dict name="3">
+			<string name="desc">.item.sets.kings-regalia.desc?speed=+25</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Speed</string>
+				<float name="attack-mul">1.25</float>
+				<float name="skill-mul">1.25</float>
+			</dict>
+		</dict>
+		<dict name="5">
+			<string name="desc">.item.sets.kings-regalia.desc?speed=+50</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Speed</string>
+				<float name="attack-mul">1.5</float>
+				<float name="skill-mul">1.5</float>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.apothecarys-implements.name</string>
+		
+		<array name="items">
+			<string>apothecarys-flask</string>
+			<string>apothecarys-herbs</string>
+			<string>apothecarys-mortar-pestle</string>
+			<string>apothecarys-satchel</string>
+			<string>apothecarys-sphere</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.apothecarys-implements.desc.1</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Potion</string>
+				<int name="charges">1</int>
+			</dict>
+		</dict>
+		<dict name="4">
+			<string name="desc">.item.sets.apothecarys-implements.desc.2?chance=1</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::Potion</string>
+					<int name="charges">1</int>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">kill</string>
+					<float name="chance">0.01</float>
+					<bool name="target-self">true</bool>
+					
+					<dict name="effect">
+						<string name="class">RefillPotion</string>
+						<string name="effect">effects/players/potion_charge_drop.effect</string>
+						<string name="sound">event:/player/potion_health</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.journeymans-outfit.name</string>
+
+		<array name="items">
+			<string>chainmail</string>
+			<string>steady-greaves</string>
+			<string>sturdy-belt</string>
+			<string>heavy-gauntlets</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.journeymans-outfit.desc.1?armor=5</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Armor</string>
+				<int name="armor">5</int>
+			</dict>
+		</dict>
+		<dict name="3">
+			<string name="desc">.item.sets.journeymans-outfit.desc.2?attack=5</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::Armor</string>
+					<int name="armor">5</int>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::Damage</string>
+					<int name="attack-power">5</int>
+				</dict>
+			</array>
+		</dict>
+		<dict name="4">
+			<string name="desc">.item.sets.journeymans-outfit.desc.3?reduction=10</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::Armor</string>
+					<int name="armor">5</int>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::Damage</string>
+					<int name="attack-power">10</int>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::Armor</string>
+					<float name="dmg-taken-mul">0.9</float>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.disciples-arcana.name</string>
+
+		<array name="items">
+			<string>wizards-wand</string>
+			<string>spell-book</string>
+			<string>mage-robe</string>
+			<string>circlet-of-willpower</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.disciples-arcana.desc.1?res=5</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Armor</string>
+				<int name="resistance">5</int>
+			</dict>
+		</dict>
+		<dict name="3">
+			<string name="desc">.item.sets.disciples-arcana.desc.2?skill=5</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::Armor</string>
+					<int name="resistance">5</int>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::Damage</string>
+					<int name="spell-power">5</int>
+				</dict>
+			</array>
+		</dict>
+		<dict name="4">
+			<string name="desc">.item.sets.disciples-arcana.desc.3?regen=20</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::Armor</string>
+					<int name="resistance">5</int>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::Damage</string>
+					<int name="spell-power">10</int>
+				</dict>
+				<dict name="modifier">
+					<string name="class">Modifiers::Regen</string>
+					<float name="mana-mul">1.2</float>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+<!--
+	<dict>
+		<string name="name">Shoppers Delight</string>
+
+		<array name="items">
+			<string>cloak-of-many-pockets</string>
+			<string>vendors-coin</string>
+			<string>fancy-plume</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">+25% more gold</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::GoldGain</string>
+				<float name="scale">1.25</float>
+			</dict>
+		</dict>
+		<dict name="3">
+			<string name="desc">+25% more gold</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::GoldGain</string>
+				<float name="scale">1.5</float>
+			</dict>
+		</dict>
+	</dict>
+-->
+
+	<dict>
+		<string name="name">.item.sets.spheres-of-power.name</string>
+		
+		<array name="items">
+			<string>lesser-sphere-of-life</string>
+			<string>lesser-sphere-of-mana</string>
+			<string>sphere-of-life</string>
+			<string>sphere-of-mana</string>
+			<string>greater-sphere-of-regen</string>
+			<string>sphere-of-champions</string>
+			<string>lesser-sphere-of-time</string>
+			<string>sphere-of-time</string>
+			<string>sphere-of-warriors</string>
+			<string>sphere-of-heroes</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.spheres-of-power.desc.1</string>
+				
+			<dict name="modifier">
+				<string name="class">Modifiers::Combo</string>
+				<dict name="effect">
+					<string name="class">Nova</string>
+					<int name="projectiles">6</int>
+					<string name="projectile">players/combo_nova_1.unit</string>
+				</dict>
+			</dict>
+		</dict>
+		
+		<dict name="3">
+			<string name="desc">.item.sets.spheres-of-power.desc.6?dmg=+25</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Combo</string>
+					<dict name="effect">
+						<string name="class">Nova</string>
+						<int name="projectiles">6</int>
+						<string name="projectile">players/combo_nova_1.unit</string>
+					</dict>
+				</dict>
+			
+				<dict>
+					<string name="class">Modifiers::Combo</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.25</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="4">
+			<string name="desc">.item.sets.spheres-of-power.desc.2</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Combo</string>
+					<dict name="effect">
+						<string name="class">Nova</string>
+						<int name="projectiles">10</int>
+						<string name="projectile">players/combo_nova_2.unit</string>
+					</dict>
+				</dict>
+				
+				<dict>
+					<string name="class">Modifiers::Combo</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.25</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="5">
+			<string name="desc">.item.sets.spheres-of-power.desc.6?dmg=+25</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Combo</string>
+					<dict name="effect">
+						<string name="class">Nova</string>
+						<int name="projectiles">10</int>
+						<string name="projectile">players/combo_nova_2.unit</string>
+					</dict>
+				</dict>
+				
+				<dict>
+					<string name="class">Modifiers::Combo</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.5</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="6">
+			<string name="desc">.item.sets.spheres-of-power.desc.3</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Combo</string>
+					<dict name="effect">
+						<string name="class">Nova</string>
+						<int name="projectiles">14</int>
+						<string name="projectile">players/combo_nova_3.unit</string>
+					</dict>
+				</dict>
+				
+				<dict>
+					<string name="class">Modifiers::Combo</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.5</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="7">
+			<string name="desc">.item.sets.spheres-of-power.desc.6?dmg=+25</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Combo</string>
+					<dict name="effect">
+						<string name="class">Nova</string>
+						<int name="projectiles">14</int>
+						<string name="projectile">players/combo_nova_3.unit</string>
+					</dict>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::Combo</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.75</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="8">
+			<string name="desc">.item.sets.spheres-of-power.desc.4</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Combo</string>
+					<dict name="effect">
+						<string name="class">Nova</string>
+						<int name="projectiles">18</int>
+						<string name="projectile">players/combo_nova_4.unit</string>
+					</dict>
+				</dict>
+			
+				<dict>
+					<string name="class">Modifiers::Combo</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.75</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="9">
+			<string name="desc">.item.sets.spheres-of-power.desc.6?dmg=+25</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Combo</string>
+					<dict name="effect">
+						<string name="class">Nova</string>
+						<int name="projectiles">18</int>
+						<string name="projectile">players/combo_nova_4.unit</string>
+					</dict>
+				</dict>
+				
+				<dict>
+					<string name="class">Modifiers::Combo</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">2</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="10">
+			<string name="desc">.item.sets.spheres-of-power.desc.5</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Combo</string>
+					<dict name="effect">
+						<string name="class">Nova</string>
+						<int name="projectiles">18</int>
+						<string name="projectile">players/combo_nova_4.unit</string>
+					</dict>
+				</dict>
+				
+				<dict name="modifier">
+					<string name="class">Modifiers::Combo</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::UnlethalDamage</string>
+					</dict>
+				</dict>
+				
+				<dict>
+					<string name="class">Modifiers::Combo</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">2</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.tricksters-ensemble.name</string>
+
+		<array name="items">
+			<string>sandals-swiftness</string>
+			<string>slippery-cloak</string>
+			<string>rapier-of-retaliation</string>
+			<string>duelists-edge</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.tricksters-ensemble.desc.1</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">evade</string>
+				<bool name="target-self">true</bool>
+
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">items/buffs.sval:cape-of-withdrawal</string>
+				</dict>
+			</dict>
+		</dict>
+		
+		<dict name="3">
+			<string name="desc">.item.sets.tricksters-ensemble.desc.2?chance=5</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::Evade</string>
+					<float name="chance">0.05</float>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">evade</string>
+					<bool name="target-self">true</bool>
+
+					<dict name="effect">
+						<string name="class">ApplyBuff</string>
+						<string name="buff">items/buffs.sval:cape-of-withdrawal</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+
+		<dict name="4">
+			<string name="desc">.item.sets.tricksters-ensemble.desc.3</string>
+
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::Evade</string>
+					<float name="chance">0.05</float>
+				</dict>
+			
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">evade</string>
+					<bool name="target-self">true</bool>
+
+					<array name="effects">
+						<dict>
+							<string name="class">GiveCombo</string>
+						</dict>
+						<dict>
+							<string name="class">ApplyBuff</string>
+							<string name="buff">items/buffs.sval:cape-of-withdrawal</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict> 
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.magic-missile.name</string>
+		
+		<array name="items">
+			<string>scroll-of-magic-missile-a</string>
+			<string>scroll-of-magic-missile-b</string>
+			<string>tome-of-magic-missile</string>
+		</array>
+		
+		<dict name="1">
+			<string name="desc">.item.sets.magic-missile.desc.1</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">castspell</string>
+				<bool name="target-self">true</bool>
+				<float name="chance">1</float>
+				<int name="timeout">2000</int>
+
+				<array name="effects">
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<string name="projectile">items/projectiles/magic_missile.unit</string>
+						<int name="dist">4</int>
+						<int name="projectiles">1</int>
+						<int name="spread">0</int>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/item/magic_missile_shoot</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.magic-missile.desc.2?num=3</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">castspell</string>
+				<bool name="target-self">true</bool>
+				<float name="chance">1</float>
+				<int name="timeout">2000</int>
+
+				<array name="effects">
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<string name="projectile">items/projectiles/magic_missile.unit</string>
+						<int name="dist">4</int>
+						<int name="projectiles">3</int>
+						<int name="spread">30</int>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/item/magic_missile_shoot</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		
+		<dict name="3">
+			<string name="desc">.item.sets.magic-missile.desc.2?num=7</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">castspell</string>
+				<bool name="target-self">true</bool>
+				<float name="chance">1</float>
+				<int name="timeout">2000</int>
+
+				<array name="effects">
+					<dict>
+						<string name="class">ShootProjectileFan</string>
+						<string name="projectile">items/projectiles/magic_missile.unit</string>
+						<int name="dist">4</int>
+						<int name="projectiles">7</int>
+						<int name="spread">60</int>
+					</dict>
+					<dict>
+						<string name="class">PlaySound</string>
+						<string name="sound">event:/item/magic_missile_shoot</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.curios-collection.name</string>
+		
+		<array name="items">
+			<string>curios-box</string>
+			<string>curios-case</string>
+			<string>curios-coffer</string>
+		</array>
+		
+		<dict name="3">
+			<string name="desc">.item.sets.curios-collection.desc?stats=+15&power=+9&armor=+6</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::Stats</string>
+					<int name="health">15</int>
+					<int name="mana">15</int>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::Damage</string>
+					<int name="attack-power">9</int>
+					<int name="spell-power">9</int>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::Armor</string>
+					<int name="armor">6</int>
+					<int name="resistance">6</int>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.markhams-mastery.name</string>
+		
+		<array name="items">
+			<string>markhams-purse</string>
+			<string>markhams-stone</string>
+			<string>markhams-mace</string>
+			<string>markhams-wand</string>
+			<string>markhams-amulet</string>
+		</array>
+		
+		<dict name="4">
+			<string name="desc">.item.sets.markhams-mastery.desc.1?gain=+0.5</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Markham</string>
+				<float name="armor">0.5</float>
+				<float name="resistance">0.5</float>
+			</dict>
+		</dict>
+		<dict name="5">
+			<string name="desc">.item.sets.markhams-mastery.desc.2?gain=+0.5</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Markham</string>
+				<float name="armor">0.5</float>
+				<float name="resistance">0.5</float>
+				<float name="attack-mul">0.005</float>
+				<float name="skill-mul">0.005</float>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.boots-of-speed.name</string>
+		
+		<array name="items">
+			<string>boots-of-speed</string>
+			<string>boots-of-speed-2</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.boots-of-speed.desc?mspeed=0.2</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Speed</string>
+				<float name="movement">0.2</float>
+			</dict>
+		</dict>
+	</dict>
+
+	<dict>
+		<string name="name">.item.sets.queens-radiance.name</string>
+		
+		<array name="items">
+			<string>queens-necklace</string>
+			<string>queens-cuirass</string>
+			<string>queens-jewel</string>
+			<string>queens-dagger</string>
+			<string>queens-tiara</string>
+		</array>
+		
+		<dict name="1">
+			<string name="desc">.item.sets.queens-radiance.desc?curses=-5</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Curse</string>
+				<int name="add">-5</int>
+			</dict>
+		</dict>
+		<dict name="2">
+			<string name="desc">.item.sets.queens-radiance.desc?curses=-10</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Curse</string>
+				<int name="add">-10</int>
+			</dict>
+		</dict>
+		<dict name="3">
+			<string name="desc">.item.sets.queens-radiance.desc?curses=-20</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Curse</string>
+				<int name="add">-20</int>
+			</dict>
+		</dict>
+		<dict name="4">
+			<string name="desc">.item.sets.queens-radiance.desc?curses=-30</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Curse</string>
+				<int name="add">-30</int>
+			</dict>
+		</dict>
+		<dict name="5">
+			<string name="desc">.item.sets.queens-radiance.desc?curses=-50</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Curse</string>
+				<int name="add">-50</int>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.seals-of-torment.name</string>
+		
+		<array name="items">
+			<string>seal-of-the-martyr</string>
+			<string>seal-of-souls</string>
+			<string>seal-of-rage</string>
+		</array>
+
+		<dict name="3">
+			<string name="desc">.item.sets.seals-of-torment.desc?faster=+2</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::SealOfGeneric</string>
+				<float name="skill-speed-mul">2</float>
+			</dict>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.instruments-of-exorcism.name</string>
+		
+		<array name="items">
+			<string>bloodletter</string>
+			<string>holy-symbol</string>
+			<string>lantern-of-light</string>
+			<string>judgement</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.instruments-of-exorcism.desc?dmg=+25</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::EnemyTypeFilter</string>
+					<string name="type">aberration</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.25</float>
+					</dict>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::EnemyTypeFilter</string>
+					<string name="type">undead</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.25</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="3">
+			<string name="desc">.item.sets.instruments-of-exorcism.desc?dmg=+50</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::EnemyTypeFilter</string>
+					<string name="type">aberration</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.5</float>
+					</dict>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::EnemyTypeFilter</string>
+					<string name="type">undead</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.5</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="4">
+			<string name="desc">.item.sets.instruments-of-exorcism.desc?dmg=+100</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::EnemyTypeFilter</string>
+					<string name="type">aberration</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">2</float>
+					</dict>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::EnemyTypeFilter</string>
+					<string name="type">undead</string>
+					<dict name="modifier">
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">2</float>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</array>

@@ -73,7 +73,7 @@
 	
 	<dict name="mask-of-bewilderment">
 		<string name="name">.item.mask-of-bewilderment.name</string>
-		<string name="desc">.item.mask-of-bewilderment.desc?dur=2.5</string>
+		<string name="desc">.item.mask-of-bewilderment.desc?dur=2.5&damage=20</string>
 		<string name="quality">epic</string>
 		<int name="cost">20000</int>
 		
@@ -84,15 +84,25 @@
 			<int>100</int><vec4>108 228 12 12</vec4>
 		</array>
 
-		<dict name="modifier">
-			<string name="class">Modifiers::TriggerEffect</string>
-			<string name="trigger">hit</string>
-			<float name="chance">1</float>
-			<dict name="effect">
-				<string name="class">ApplyBuff</string>
-				<string name="buff">items/buffs.sval:confusion</string>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">hit</string>
+				<float name="chance">1</float>
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">items/buffs.sval:confusion</string>
+				</dict>
 			</dict>
-		</dict>
+			<dict>
+				<string name="class">Modifiers::StatueFilteredDamage</string>
+				<array name="tags">
+					<string>confusion</string>
+				</array>
+
+				<float name="mul-add">0.2</float>
+			</dict>
+		</array>
 	</dict>
 	
 	<dict name="phoenix-feather">

@@ -2380,7 +2380,7 @@
 	<string name="item.cape-of-withdrawal.desc">Getting hit triggers a %mspeed%% Movement Speed bonus for %dur% seconds.</string>
 
 	<string name="item.circlet-of-willpower.name">Circlet of Willpower</string>
-	<string name="item.circlet-of-willpower.desc">When below %health%% Health, skills cost %scost%% less mana.</string>
+	<string name="item.circlet-of-willpower.desc">When below %health%% Health, you gain +%regen% Mana regen.</string>
 
 	<string name="item.chainmail.name">Chainmail</string>
 	<string name="item.chainmail.desc">+%armor% Armor.</string>
@@ -2476,10 +2476,10 @@
 	<string name="item.sandals-swiftness.desc">+%mspeed% Movement Speed and +%evasion%% Evasion.</string>
 
 	<string name="item.scroll-of-magic-missile-a.name">Scroll of Magic Missile: Page 1</string>
-	<string name="item.scroll-of-magic-missile-a.desc">Magic missiles deal %dmg% Magical damage and has a cooldown of 2 seconds.</string>
+	<string name="item.scroll-of-magic-missile-a.desc">Magic missiles deal %dmg% Magical damage and has a cooldown of 2 seconds.\n+%spell% Spell Power</string>
 
 	<string name="item.scroll-of-magic-missile-b.name">Scroll of Magic Missile: Page 2</string>
-	<string name="item.scroll-of-magic-missile-b.desc">Magic missiles deal %dmg% Magical damage and has a cooldown of 2 seconds.</string>
+	<string name="item.scroll-of-magic-missile-b.desc">Magic missiles deal %dmg% Magical damage and has a cooldown of 2 seconds.\n+%respierce%% Resistance Pierce</string>
 
 	<string name="item.serrated-scimitar.name">Serrated Scimitar</string>
 	<string name="item.serrated-scimitar.desc">%chance%% chance to score a Critical Hit on Primary Attack.</string>
@@ -2647,7 +2647,7 @@
 	<string name="item.sphere-of-time.desc">Time to maintain Combo is increased by %dur% second.</string>
 
 	<string name="item.sphere-of-warriors.name">Sphere of Warriors</string>
-	<string name="item.sphere-of-warriors.desc">Kill requirement for getting combo is lowered by %num%.</string>
+	<string name="item.sphere-of-warriors.desc">Kill requirement for getting combo is lowered by %num%.\nYou deal +%damage%% more damage in combo.</string>
 
 	<string name="item.staff-of-unstable-casting.name">Staff of Unstable Casting</string>
 	<string name="item.staff-of-unstable-casting.desc">%chance%% chance to score a Critical Hit with Skills.</string>
@@ -2790,7 +2790,7 @@
 	<string name="item.dragonscale-mail.desc">Take %taken%% less damage.</string>
 
 	<string name="item.mask-of-bewilderment.name">Mask of Bewilderment</string>
-	<string name="item.mask-of-bewilderment.desc">Primary Attack applies confusion for %dur% seconds.</string>
+	<string name="item.mask-of-bewilderment.desc">Primary Attack applies confusion for %dur% seconds.\nYou deal +%damage%% more damage to confused enemies.</string>
 
 	<string name="item.lantern-of-light.name">Lantern of Light</string>
 	<string name="item.lantern-of-light.desc">Immune to Darkness. Shines a light in a forward cone that reduces enemies Resistance by %res%%.</string>
@@ -2861,7 +2861,7 @@
 	<string name="item.sets.disciples-arcana.name">Disciple's Arcana</string>
 	<string name="item.sets.disciples-arcana.desc.1">+%res% Resistance.</string>
 	<string name="item.sets.disciples-arcana.desc.2">+%skill% Skill Power.</string>
-	<string name="item.sets.disciples-arcana.desc.3">skills cost %cost%% less Mana.</string>
+	<string name="item.sets.disciples-arcana.desc.3">gain +%regen%% Mana regen.</string>
 
 	<string name="item.sets.spheres-of-power.name">Spheres of Power</string>
 	<string name="item.sets.spheres-of-power.desc.1">Lesser Combo nova.</string>
