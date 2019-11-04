@@ -159,10 +159,8 @@
 			<float name="chance">0.05</float>
 			<bool name="target-self">true</bool>
 			<dict name="effect">
-				<string name="class">StackMaxHealth</string>
-				<int name="amount">1</int>
-				<int name="duration">7000</int>
-				<int name="max-stacks">8</int>
+				<string name="class">Heal</string>
+				<int name="heal">5</int>
 			</dict>
 		</dict>
 	</dict>

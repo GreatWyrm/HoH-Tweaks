@@ -11,82 +11,232 @@
 		<!-- Level 1 -->
 		<dict>
 			<string name="class">Skills::PassiveSkill</string>
-			<dict name="modifier">
-				<string name="class">Modifiers::LightningShield</string>
-				<float name="dmg-taken-mul">0.95</float>
-				<int name="cooldown">4000</int>
-				<string name="fx">players/warlock/flame_shield.effect</string>
-				<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::LightningShield</string>
+					<float name="dmg-taken-mul">0.95</float>
+					<int name="cooldown">4000</int>
+					<string name="fx">players/warlock/flame_shield.effect</string>
+					<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
 
-				<array name="hud-cooldown">
-					<string>gui/icons_buffs.png</string>
-					<int>100</int><vec4>24 24 12 12</vec4>
-				</array>
-			</dict>
+					<array name="hud-cooldown">
+						<string>gui/icons_buffs.png</string>
+						<int>100</int><vec4>24 24 12 12</vec4>
+					</array>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hurt</string>
+					<bool name="target-self">false</bool>
+					<float name="chance">1</float>
+					<int name="timeout">4000</int>
+
+					<dict name="effect">
+						<string name="class">ShootBolt</string>
+						<int name="height">6</int>
+						<int name="spread">4</int>
+						<string name="fx">effects/players/lightning_bolt.effect</string>
+				
+						<array name="effects">
+							<dict>
+								<string name="class">Explode</string>
+								<int name="radius">3</int>
+								<int name="min-radius">3</int>
+								<array name="effects">
+									<dict>
+										<string name="class">Damage</string>
+										<int name="magical">20</int>
+									</dict>
+								</array>
+							</dict>
+						</array>
+					</dict>
+				</dict>
+			</array>
 		</dict>
 		<!-- Level 2 -->
 		<dict>
 			<string name="class">Skills::PassiveSkill</string>
-			<dict name="modifier">
-				<string name="class">Modifiers::LightningShield</string>
-				<float name="dmg-taken-mul">0.9</float>
-				<int name="cooldown">4000</int>
-				<string name="fx">players/warlock/flame_shield.effect</string>
-				<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::LightningShield</string>
+					<float name="dmg-taken-mul">0.9</float>
+					<int name="cooldown">4000</int>
+					<string name="fx">players/warlock/flame_shield.effect</string>
+					<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
 
-				<array name="hud-cooldown">
-					<string>gui/icons_buffs.png</string>
-					<int>100</int><vec4>24 24 12 12</vec4>
-				</array>
-			</dict>
+					<array name="hud-cooldown">
+						<string>gui/icons_buffs.png</string>
+						<int>100</int><vec4>24 24 12 12</vec4>
+					</array>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hurt</string>
+					<bool name="target-self">false</bool>
+					<float name="chance">1</float>
+					<int name="timeout">4000</int>
+
+					<dict name="effect">
+						<string name="class">ShootBolt</string>
+						<int name="height">6</int>
+						<int name="spread">4</int>
+						<string name="fx">effects/players/lightning_bolt.effect</string>
+				
+						<array name="effects">
+							<dict>
+								<string name="class">Explode</string>
+								<int name="radius">3</int>
+								<int name="min-radius">3</int>
+								<array name="effects">
+									<dict>
+										<string name="class">Damage</string>
+										<int name="magical">25</int>
+									</dict>
+								</array>
+							</dict>
+						</array>
+					</dict>
+				</dict>
+			</array>
 		</dict>
 		<!-- Level 3 -->
 		<dict>
 			<string name="class">Skills::PassiveSkill</string>
-			<dict name="modifier">
-				<string name="class">Modifiers::LightningShield</string>
-				<float name="dmg-taken-mul">0.85</float>
-				<int name="cooldown">4000</int>
-				<string name="fx">players/warlock/flame_shield.effect</string>
-				<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::LightningShield</string>
+					<float name="dmg-taken-mul">0.85</float>
+					<int name="cooldown">4000</int>
+					<string name="fx">players/warlock/flame_shield.effect</string>
+					<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
 
-				<array name="hud-cooldown">
-					<string>gui/icons_buffs.png</string>
-					<int>100</int><vec4>24 24 12 12</vec4>
-				</array>
-			</dict>
+					<array name="hud-cooldown">
+						<string>gui/icons_buffs.png</string>
+						<int>100</int><vec4>24 24 12 12</vec4>
+					</array>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hurt</string>
+					<bool name="target-self">false</bool>
+					<float name="chance">1</float>
+					<int name="timeout">4000</int>
+
+					<dict name="effect">
+						<string name="class">ShootBolt</string>
+						<int name="height">6</int>
+						<int name="spread">4</int>
+						<string name="fx">effects/players/lightning_bolt.effect</string>
+				
+						<array name="effects">
+							<dict>
+								<string name="class">Explode</string>
+								<int name="radius">3</int>
+								<int name="min-radius">3</int>
+								<array name="effects">
+									<dict>
+										<string name="class">Damage</string>
+										<int name="magical">30</int>
+									</dict>
+								</array>
+							</dict>
+						</array>
+					</dict>
+				</dict>
+			</array>
 		</dict>
 		<!-- Level 4 -->
 		<dict>
 			<string name="class">Skills::PassiveSkill</string>
-			<dict name="modifier">
-				<string name="class">Modifiers::LightningShield</string>
-				<float name="dmg-taken-mul">0.8</float>
-				<int name="cooldown">4000</int>
-				<string name="fx">players/warlock/flame_shield.effect</string>
-				<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::LightningShield</string>
+					<float name="dmg-taken-mul">0.8</float>
+					<int name="cooldown">4000</int>
+					<string name="fx">players/warlock/flame_shield.effect</string>
+					<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
 
-				<array name="hud-cooldown">
-					<string>gui/icons_buffs.png</string>
-					<int>100</int><vec4>24 24 12 12</vec4>
-				</array>
-			</dict>
+					<array name="hud-cooldown">
+						<string>gui/icons_buffs.png</string>
+						<int>100</int><vec4>24 24 12 12</vec4>
+					</array>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hurt</string>
+					<bool name="target-self">false</bool>
+					<float name="chance">1</float>
+					<int name="timeout">4000</int>
+
+					<dict name="effect">
+						<string name="class">ShootBolt</string>
+						<int name="height">6</int>
+						<int name="spread">4</int>
+						<string name="fx">effects/players/lightning_bolt.effect</string>
+				
+						<array name="effects">
+							<dict>
+								<string name="class">Explode</string>
+								<int name="radius">3</int>
+								<int name="min-radius">3</int>
+								<array name="effects">
+									<dict>
+										<string name="class">Damage</string>
+										<int name="magical">35</int>
+									</dict>
+								</array>
+							</dict>
+						</array>
+					</dict>
+				</dict>
+			</array>
 		</dict>
 		<!-- Level 5 -->
 		<dict>
 			<string name="class">Skills::PassiveSkill</string>
-			<dict name="modifier">
-				<string name="class">Modifiers::LightningShield</string>
-				<float name="dmg-taken-mul">0.75</float>
-				<int name="cooldown">4000</int>
-				<string name="fx">players/warlock/flame_shield.effect</string>
-				<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::LightningShield</string>
+					<float name="dmg-taken-mul">0.75</float>
+					<int name="cooldown">4000</int>
+					<string name="fx">players/warlock/flame_shield.effect</string>
+					<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
 
-				<array name="hud-cooldown">
-					<string>gui/icons_buffs.png</string>
-					<int>100</int><vec4>24 24 12 12</vec4>
-				</array>
-			</dict>
+					<array name="hud-cooldown">
+						<string>gui/icons_buffs.png</string>
+						<int>100</int><vec4>24 24 12 12</vec4>
+					</array>
+				</dict>
+				<dict>
+					<string name="class">Modifiers::TriggerEffect</string>
+					<string name="trigger">hurt</string>
+					<bool name="target-self">false</bool>
+					<float name="chance">1</float>
+					<int name="timeout">4000</int>
+
+					<dict name="effect">
+						<string name="class">ShootBolt</string>
+						<int name="height">6</int>
+						<int name="spread">4</int>
+						<string name="fx">effects/players/lightning_bolt.effect</string>
+				
+						<array name="effects">
+							<dict>
+								<string name="class">Explode</string>
+								<int name="radius">3</int>
+								<int name="min-radius">3</int>
+								<array name="effects">
+									<dict>
+										<string name="class">Damage</string>
+										<int name="magical">40</int>
+									</dict>
+								</array>
+							</dict>
+						</array>
+					</dict>
+				</dict>
+			</array>
 		</dict>
 	</array>
 </dict>

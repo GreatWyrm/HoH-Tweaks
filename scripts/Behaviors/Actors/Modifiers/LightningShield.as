@@ -45,20 +45,6 @@ namespace Modifiers
 			if (m_cooldownC > 0)
 				return 1;
 
-			if (di.Attacker !is player)
-			{
-				auto skill = cast<Skills::DropUnitWarlock>(player.m_skills[2]);
-				if (skill !is null)
-				{
-					vec2 dir;
-					if (di.Attacker !is null) {
-						dir = normalize(xy(player.m_unit.GetPosition()) - xy(di.Attacker.m_unit.GetPosition()));
-						skill.SpawnUnit(player.m_unit.GetPosition(), xy(di.Attacker.m_unit.GetPosition()));
-						(Network::Message("PlayerActiveSkillActivate") << int(skill.m_skillId) << dir).SendToAll();
-					}
-				}
-			}
-
 			m_cooldownC = m_cooldown;
 
 			auto hud = GetHUD();
