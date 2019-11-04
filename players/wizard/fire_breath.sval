@@ -1,0 +1,191 @@
+<dict>
+	<string name="name">.skills.wizard.fire-breath</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 120 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::SpewProjectiles</string>
+
+			<int name="cooldown">0</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">4</int>
+
+			<string name="anim">breath 8</string>
+			<string name="snd-hold">event:/player/wizard/breath</string>
+			<float name="speed-mul">0.3</float>
+			<bool name="blocking">true</bool>
+
+			<int name="interval">200</int>
+			<int name="spew-interval">40</int>
+			<int name="spread">10</int>
+
+			<int name="dist">5</int>
+			<int name="projectiles">1</int>
+			<string name="projectile">players/wizard/breath_1.unit</string>
+			
+			<int name="effect-interval">1000</int>
+			<int name="effect-dist">80</int>
+			<dict name="effect">
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">25</string>
+			</dict>
+		</dict>
+
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::SpewProjectiles</string>
+
+			<int name="cooldown">0</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">5</int>
+
+			<string name="anim">breath 8</string>
+			<string name="snd-hold">event:/player/wizard/breath</string>
+			<float name="speed-mul">0.35</float>
+			<bool name="blocking">true</bool>
+
+			<int name="interval">200</int>
+			<int name="spew-interval">40</int>
+			<int name="spread">10</int>
+
+			<int name="dist">5</int>
+			<int name="projectiles">1</int>
+			<string name="projectile">players/wizard/breath_2.unit</string>
+			
+			<int name="effect-interval">1000</int>
+			<int name="effect-dist">90</int>
+			<dict name="effect">
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">25</string>
+			</dict>
+		</dict>
+
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::SpewProjectiles</string>
+
+			<int name="cooldown">0</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">6</int>
+
+			<string name="anim">breath 8</string>
+			<string name="snd-hold">event:/player/wizard/breath</string>
+			<float name="speed-mul">0.4</float>
+			<bool name="blocking">true</bool>
+
+			<int name="interval">200</int>
+			<int name="spew-interval">40</int>
+			<int name="spread">10</int>
+
+			<int name="dist">5</int>
+			<int name="projectiles">1</int>
+			<string name="projectile">players/wizard/breath_3.unit</string>
+			
+			<int name="effect-interval">1000</int>
+			<int name="effect-dist">100</int>
+			<dict name="effect">
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">25</string>
+			</dict>
+		</dict>
+
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::SpewProjectiles</string>
+
+			<int name="cooldown">0</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">7</int>
+
+			<string name="anim">breath 8</string>
+			<string name="snd-hold">event:/player/wizard/breath</string>
+			<float name="speed-mul">0.45</float>
+			<bool name="blocking">true</bool>
+
+			<int name="interval">200</int>
+			<int name="spew-interval">40</int>
+			<int name="spread">10</int>
+
+			<int name="dist">5</int>
+			<int name="projectiles">1</int>
+			<string name="projectile">players/wizard/breath_4.unit</string>
+			
+			<int name="effect-interval">1000</int>
+			<int name="effect-dist">110</int>
+			<dict name="effect">
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">25</string>
+			</dict>
+		</dict>
+
+		<!-- Level 5 -->
+		<dict>
+			<string name="class">Skills::SpewProjectiles</string>
+
+			<int name="cooldown">0</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">8</int>
+
+			<string name="anim">breath 8</string>
+			<string name="snd-hold">event:/player/wizard/breath</string>
+			<float name="speed-mul">0.5</float>
+			<bool name="blocking">true</bool>
+
+			<int name="interval">200</int>
+			<int name="spew-interval">40</int>
+			<int name="spread">10</int>
+
+			<int name="dist">5</int>
+			<int name="projectiles">1</int>
+			<string name="projectile">players/wizard/breath_5.unit</string>
+			
+			<int name="effect-interval">1000</int>
+			<int name="effect-dist">120</int>
+			<dict name="effect">
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">25</string>
+			</dict>
+		</dict>
+
+		<!-- Level 6 -->
+		<dict>
+			<string name="class">Skills::SpewProjectiles</string>
+
+			<int name="cooldown">0</int>
+			<int name="castpoint">0</int>
+
+			<int name="mana-cost">9</int>
+
+			<string name="anim">breath 8</string>
+			<string name="snd-hold">event:/player/wizard/breath</string>
+			<float name="speed-mul">0.55</float>
+			<bool name="blocking">true</bool>
+
+			<int name="interval">200</int>
+			<int name="spew-interval">40</int>
+			<int name="spread">10</int>
+
+			<int name="dist">5</int>
+			<int name="projectiles">1</int>
+			<string name="projectile">players/wizard/breath_6.unit</string>
+			
+			<int name="effect-interval">1000</int>
+			<int name="effect-dist">130</int>
+			<dict name="effect">
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">25</string>
+			</dict>
+		</dict>
+	</array>
+</dict>

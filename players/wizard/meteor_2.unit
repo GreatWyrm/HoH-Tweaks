@@ -1,0 +1,51 @@
+<unit>
+	<behavior class="BombBehavior">
+	
+		<int name="delay">500</int>
+		<int name="delay-random">0</int>
+
+		<string name="spawn-sound">event:/item/item_meteor-fall</string>
+
+		<array name="actions">
+			<dict>
+				<string name="class">Skills::ScorchEarth</string>
+				<string name="scene">60</string>
+				<int name="duration">8000</int>
+			</dict>
+			<dict>
+				<string name="class">Explode</string>
+				<float name="dist-scaling">4</float>
+				<string name="fx">players/wizard/meteor_hit.effect</string>
+				<int name="radius">55</int>
+				<float name="team-dmg">0</float>
+				<array name="effects">
+					<dict>
+						<string name="class">Damage</string>
+						<int name="physical">120</int>
+						<float name="armor-mul">0.9</float>
+					</dict>
+					<dict>
+						<string name="class">Damage</string>
+						<int name="magical">120</int>
+						<float name="resistance-mul">0.9</float>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		
+		<dict name="effect-params">
+			<float name="fall_angle">0.3</float>
+			<float name="radius">55</float>
+			<float name="colorr">1</float>
+			<float name="colorg">1</float>
+			<float name="colorb">1</float>
+		</dict>
+	</behavior>
+
+	<scenes>
+		<scene>
+			<effect src="items/projectiles/meteor.effect" />
+			<effect src="doodads/generic/trap_indicator.effect" />
+		</scene>
+	</scenes>
+</unit>

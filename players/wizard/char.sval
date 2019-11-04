@@ -1,0 +1,29 @@
+<dict>
+	<array name="skills">
+		<string>players/wizard/fireball.sval</string>
+		<string>players/wizard/fire_breath.sval</string>
+		<string>players/wizard/blast_wave.sval</string>
+		<string>players/wizard/meteor_shower.sval</string>
+		
+		<string>players/wizard/combustion.sval</string>
+		<string>players/wizard/flame_shield.sval</string>
+		<string>players/wizard/scorched_earth.sval</string>
+	</array>
+
+	<int name="face-y">120</int>
+	<int name="face-count">5</int>
+
+	<float name="base-health">35</float>
+	<float name="base-mana">75</float>
+	<float name="base-health-regen">0</float>
+	<float name="base-mana-regen">1.5</float>
+	<float name="base-armor">0</float>
+	<float name="base-resistance">2</float>
+	
+	<float name="level-health">5</float>
+	<float name="level-mana">15</float>
+	<float name="level-health-regen">0.025</float>
+	<float name="level-mana-regen">0.1</float>
+	<float name="level-armor">0.2</float>
+	<float name="level-resistance">0.5</float>
+</dict>

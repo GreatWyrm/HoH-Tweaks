@@ -2233,14 +2233,14 @@
 
 	<string name="skills.wizard.meteor-shower">Meteor Shower</string>
 	<string name="skills.wizard.meteor-shower.create">Evokes a shower of meteors to strike the ground around the Wizard dealing heavy Hybrid damage.</string>
-	<string name="skills.wizard.meteor-shower.1">Evokes 3 meteors to strike the ground around the Wizard dealing 160 Hybrid damage.</string>
-	<string name="skills.wizard.meteor-shower.2">Evokes 5 meteors to strike the ground around the Wizard dealing 240 Hybrid damage.</string>
-	<string name="skills.wizard.meteor-shower.3">Evokes 7 meteors to strike the ground around the Wizard dealing 320 Hybrid damage.</string>
+	<string name="skills.wizard.meteor-shower.1">Evokes 3 meteors to strike the ground around the Wizard dealing 160 Hybrid damage with 5% armor and resistance piercing.</string>
+	<string name="skills.wizard.meteor-shower.2">Evokes 5 meteors to strike the ground around the Wizard dealing 240 Hybrid damage with 10% armor and resistance piercing.</string>
+	<string name="skills.wizard.meteor-shower.3">Evokes 7 meteors to strike the ground around the Wizard dealing 320 Hybrid damage with 15% armor and resistance piercing.</string>
 
 	<string name="skills.wizard.scorched-earth">Scorched Earth</string>
 	<string name="skills.wizard.scorched-earth.create">All Wizards skills leave a burning danger area for a few seconds at the point of impact.</string>
-	<string name="skills.wizard.scorched-earth.1">All Wizards skills leave a burning danger area that deal 8 Magical damage per second.</string>
-	<string name="skills.wizard.scorched-earth.2">All Wizards skills leave a burning danger area that deal 16 Magical damage per second. The duration of the danger areas are doubled.</string>
+	<string name="skills.wizard.scorched-earth.1">All Wizards skills leave a burning danger area that deal 8 Magical damage per second and pierces 5% resistance.</string>
+	<string name="skills.wizard.scorched-earth.2">All Wizards skills leave a burning danger area that deal 16 Magical damage per second and pierces 10% resistance. The duration of the danger areas are doubled.</string>
 
 
 	<!-- Gladiator -->

@@ -1,0 +1,86 @@
+<dict>
+	<string name="name">.skills.wizard.meteor-shower</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>120 120 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::StaggeredSpawnUnits</string>
+			
+			<int name="cooldown">5000</int>
+			<int name="castpoint">0</int>
+			
+			<int name="mana-cost">80</int>
+			
+			<string name="snd">event:/player/wizard/meteor-summon</string>
+			<string name="anim">channeling</string>
+			<float name="speed-mul">0.1</float>
+			<bool name="blocking">true</bool>
+			
+			<int name="duration">800</int>
+			<string name="unit">players/wizard/meteor_1.unit</string>
+			<array name="positions">
+				<vec2>-50 50</vec2>
+				<vec2>70 20</vec2>
+				<vec2>-20 -70</vec2>
+			</array>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::StaggeredSpawnUnits</string>
+			
+			<int name="cooldown">5000</int>
+			<int name="castpoint">0</int>
+			
+			<int name="mana-cost">120</int>
+			
+			<string name="snd">event:/player/wizard/meteor-summon</string>
+			<string name="anim">channeling</string>
+			<float name="speed-mul">0.2</float>
+			<bool name="blocking">true</bool>
+			
+			<int name="duration">1000</int>
+			<string name="unit">players/wizard/meteor_2.unit</string>
+			<array name="positions">
+				<vec2>10 -60</vec2>
+				<vec2>-60 50</vec2>
+				<vec2>60 -40</vec2>
+				<vec2>-50 -60</vec2>
+				<vec2>40 60</vec2>
+			</array>
+		</dict>
+		
+		<!-- Level 3-->
+		<dict>
+			<string name="class">Skills::StaggeredSpawnUnits</string>
+			
+			<int name="cooldown">5000</int>
+			<int name="castpoint">0</int>
+			
+			<int name="mana-cost">160</int>
+			
+			<string name="snd">event:/player/wizard/meteor-summon</string>
+			<string name="anim">channeling</string>
+			<float name="speed-mul">0.3</float>
+			<bool name="blocking">true</bool>
+			
+			<int name="duration">1200</int>
+			<string name="unit">players/wizard/meteor_3.unit</string>
+			<array name="positions">
+				<vec2>10 -60</vec2>
+				<vec2>-40 50</vec2>
+				<vec2>70 0</vec2>
+				<vec2>-60 -30</vec2>
+				<vec2>20 70</vec2>
+				<vec2>50 -20</vec2>
+				<vec2>-70 10</vec2>
+			</array>
+		</dict>
+	</array>
+</dict>
