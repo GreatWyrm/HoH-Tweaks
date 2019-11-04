@@ -1,0 +1,99 @@
+<effect looping="false">
+	
+	<data>
+		<string name="sound">event:/player/wizard/flameshield</string>
+	</data>		
+	
+	<sprite looping="false" layer="2" origin="10 13" texture="./flame_shield.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="1"
+		color-g="1"
+		color-b="0.75"
+		color-a="1-t"
+	>
+		<frame time="40">0 0 20 20</frame>
+		<frame time="50">20 0 20 20</frame>
+		<frame time="50">40 0 20 20</frame>
+		<frame time="50">60 0 20 20</frame>
+		<frame time="50">80 0 20 20</frame>
+		<frame time="50">100 0 20 20</frame>
+		<frame time="450">0 0 0 0</frame>
+	</sprite>
+	<sprite looping="false" layer="-1" origin="10 13" texture="./flame_shield.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="1"
+		color-g="1"
+		color-b="0.75"
+		color-a="1-t"
+	>
+		<frame time="290">0 0 0 0</frame>
+		<frame time="50">0 20 20 20</frame>
+		<frame time="50">20 20 20 20</frame>
+		<frame time="50">40 20 20 20</frame>
+		<frame time="50">60 20 20 20</frame>
+		<frame time="50">80 20 20 20</frame>
+		<frame time="50">100 20 20 20</frame>
+		<frame time="150">0 0 0 0</frame>
+	</sprite>
+	
+	<sprite looping="false" origin="19 17" texture="./flame_shield_charge.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="1"
+		color-g="0.75 - t*0.75"
+		color-b="0.75 - t*0.75"
+		color-a="0.7 - t*0.7"
+		scale-x="0.75 + t/2"
+		scale-y="0.75 + t/2"
+	>
+		
+		<frame time="300">175 28 35 28</frame>
+	</sprite>
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="225"/>
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="sin(t*2)*80" />
+			
+		<color-r value="2" />
+		<color-g value="2" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="300"/>
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="120*(1-t)" />
+			
+		<color-r value="2" />
+		<color-g value="2" />
+		<color-b value="1" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

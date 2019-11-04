@@ -1,0 +1,29 @@
+<dict>
+	<array name="skills">
+		<string>players/warlock/soul_dagger.sval</string>
+		<string>players/warlock/lightning_bolt.sval</string>
+		<string>players/warlock/summon_gargoyle.sval</string>
+		<string>players/warlock/eye_of_the_storm.sval</string>
+		
+		<string>players/warlock/lightning_detonation.sval</string>
+		<string>players/warlock/soul_cleaver.sval</string>
+		<string>players/warlock/stormlash.sval</string>
+	</array>
+
+	<int name="face-y">144</int>
+	<int name="face-count">5</int>
+
+	<float name="base-health">60</float>
+	<float name="base-mana">75</float>
+	<float name="base-health-regen">0</float>
+	<float name="base-mana-regen">1.5</float>
+	<float name="base-armor">2</float>
+	<float name="base-resistance">2</float>
+	
+	<float name="level-health">6</float>
+	<float name="level-mana">13</float>
+	<float name="level-health-regen">0.025</float>
+	<float name="level-mana-regen">0.075</float>
+	<float name="level-armor">0.3</float>
+	<float name="level-resistance">0.3</float>
+</dict>

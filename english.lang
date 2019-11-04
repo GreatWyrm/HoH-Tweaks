@@ -2164,6 +2164,14 @@
 	<string name="skills.warlock.extended-domain.4">Extends the effective range of all Warlock's skills by 60%.</string>
 	<string name="skills.warlock.extended-domain.5">Extends the effective range of all Warlock's skills by 75%.</string>
 
+	<string name="skills.warlock.lightning-detonation">Lightning Detonation</string>
+	<string name="skills.warlock.lightning-detonation.create">A rechargeable shield that lowers the damage of one damage instance. Triggers Summon Gargoyle when activated.</string>
+	<string name="skills.warlock.lightning-detonation.1">Protects the Warlock by lowering the damage of one damage instance by 5%. When Lightning Detonation activates, your current level of Summon Gargoyle is triggered. Recharges after 4 seconds.</string>
+	<string name="skills.warlock.lightning-detonation.2">Protects the Warlock by lowering the damage of one damage instance by 10%. When Lightning Detonation activates, your current level of Summon Gargoyle is triggered. Recharges after 4 seconds.</string>
+	<string name="skills.warlock.lightning-detonation.3">Protects the Warlock by lowering the damage of one damage instance by 15%. When Lightning Detonation activates, your current level of Summon Gargoyle is triggered. Recharges after 4 seconds.</string>
+	<string name="skills.warlock.lightning-detonation.4">Protects the Warlock by lowering the damage of one damage instance by 20%. When Lightning Detonation activates, your current level of Summon Gargoyle is triggered. Recharges after 4 seconds.</string>
+	<string name="skills.warlock.lightning-detonation.5">Protects the Warlock by lowering the damage of one damage instance by 25%. When Lightning Detonation activates, your current level of Summon Gargoyle is triggered. Recharges after 4 seconds.</string>
+
 	<string name="skills.warlock.soul-cleaver">Soul Cleaver</string>
 	<string name="skills.warlock.soul-cleaver.create">Enemies affected by Soul Consumption will spread damage to nearby enemies. Affected enemies also have a chance to spread Soul Consumption when killed.</string>
 	<string name="skills.warlock.soul-cleaver.1">Enemies affected by Soul Consumption will spread 50% of the damage taken to nearby enemies. Affected enemies also have a 20% chance to spread Soul Consumption when killed.</string>

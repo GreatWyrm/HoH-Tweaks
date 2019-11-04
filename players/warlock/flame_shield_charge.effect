@@ -1,0 +1,67 @@
+<effect looping="false" layer="2">
+	
+	<data>
+		<string name="sound">event:/player/wizard/flameshield_regen</string>
+	</data>		
+	
+	<sprite looping="false" origin="19 17" texture="./flame_shield_charge.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="1"
+		color-g="1"
+		color-b="0.75"
+		color-a="1"
+	>
+		<frame time="35">0 0 35 28</frame>
+		<frame time="35">35 0 35 28</frame>
+		<frame time="35">70 0 35 28</frame>
+		<frame time="35">105 0 35 28</frame>
+		<frame time="35">140 0 35 28</frame>
+		<frame time="35">175 0 35 28</frame>
+		<frame time="35">210 0 35 28</frame>
+		<frame time="35">0 28 35 28</frame>
+		<frame time="35">35 28 35 28</frame>
+		<frame time="35">70 28 35 28</frame>
+		<frame time="35">105 28 35 28</frame>
+		<frame time="35">140 28 35 28</frame>
+		<frame time="35">175 28 35 28</frame>
+		<frame time="150">0 0 0 0</frame>
+	</sprite>
+	<sprite looping="false" origin="19 17" texture="./flame_shield_charge.png" material="system/default.mats:bright-noxray-glowing"
+		color-r="1"
+		color-g="0.75 - t*0.75"
+		color-b="0.75 - t*0.75"
+		color-a="0.7 - t*0.7"
+		scale-x="0.5 + t/2"
+		scale-y="0.5 + t/2"
+	>
+		
+		<frame time="455">0 0 0 0</frame>
+		<frame time="300">175 28 35 28</frame>
+	</sprite>
+	
+	
+	<light pos="0 0">
+		<sprite texture="system/light_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+		
+		<length value="400"/>
+		
+		<looping value="true" />
+		
+		<cast-shadows value="false" />
+
+		
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+		
+		<shadow-cast-pos-jitter value="0 0 0 0" />
+		
+		<size value="100 * saturate(sin(pi * pow(t,4) ))" />
+			
+		<color-r value="2 * saturate( sin ( pi * pow(t,4) ))" />
+		<color-g value="2 * saturate( sin ( pi * pow(t,4) ))" />
+		<color-b value="1 * saturate( sin ( pi * pow(t,4) ))" />
+		<color-a value="0"/>
+		
+	</light>	
+</effect>

@@ -1,0 +1,125 @@
+<dict>
+	<string name="name">.skills.warlock.lightning-bolt</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>24 144 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<int name="mana-cost">20</int>
+			
+			<string name="snd">event:/player/warlock/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0</float>
+			<bool name="blocking">true</bool>
+			
+			<int name="dist">5</int>
+			<float name="range-mul">1.75</float>
+			<string name="projectile">players/warlock/bolt_1.unit</string>
+		</dict>
+		
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<int name="mana-cost">27</int>
+			
+			<string name="snd">event:/player/warlock/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0</float>
+			<bool name="blocking">true</bool>
+			
+			<int name="dist">5</int>
+			<float name="range-mul">1.75</float>
+			<string name="projectile">players/warlock/bolt_2.unit</string>
+		</dict>
+		
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<int name="mana-cost">34</int>
+			
+			<string name="snd">event:/player/warlock/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0</float>
+			<bool name="blocking">true</bool>
+			
+			<int name="dist">5</int>
+			<float name="range-mul">1.75</float>
+			<string name="projectile">players/warlock/bolt_3.unit</string>
+		</dict>
+		
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<int name="mana-cost">41</int>
+			
+			<string name="snd">event:/player/warlock/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0</float>
+			<bool name="blocking">true</bool>
+			
+			<int name="dist">5</int>
+			<float name="range-mul">1.75</float>
+			<string name="projectile">players/warlock/bolt_4.unit</string>
+		</dict>
+		
+		<!-- Level 5 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<int name="mana-cost">48</int>
+			
+			<string name="snd">event:/player/warlock/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0</float>
+			<bool name="blocking">true</bool>
+			
+			<int name="dist">5</int>
+			<float name="range-mul">1.75</float>
+			<string name="projectile">players/warlock/bolt_5.unit</string>
+		</dict>
+		
+		<!-- Level 6 -->
+		<dict>
+			<string name="class">Skills::ShootProjectile</string>
+			
+			<int name="cooldown">500</int>
+			<int name="castpoint">0</int>
+			
+			<int name="mana-cost">55</int>
+			
+			<string name="snd">event:/player/warlock/attack</string>
+			<string name="anim">attack 8</string>
+			<float name="speed-mul">0</float>
+			<bool name="blocking">true</bool>
+			
+			<int name="dist">5</int>
+			<float name="range-mul">1.75</float>
+			<string name="projectile">players/warlock/bolt_6.unit</string>
+		</dict>
+	</array>
+</dict>

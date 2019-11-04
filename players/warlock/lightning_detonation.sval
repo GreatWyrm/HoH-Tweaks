@@ -1,0 +1,92 @@
+<dict>
+	<string name="name">.skills.warlock.lightning-detonation</string>
+	<array name="icon">
+		<string>gui/icons_skills.png</string>
+		<int>100</int><vec4>216 144 24 24</vec4>
+	</array>
+
+	<array name="skills">
+		<null />
+		
+		<!-- Level 1 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::LightningShield</string>
+				<float name="dmg-taken-mul">0.95</float>
+				<int name="cooldown">4000</int>
+				<string name="fx">players/warlock/flame_shield.effect</string>
+				<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
+
+				<array name="hud-cooldown">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 24 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		<!-- Level 2 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::LightningShield</string>
+				<float name="dmg-taken-mul">0.9</float>
+				<int name="cooldown">4000</int>
+				<string name="fx">players/warlock/flame_shield.effect</string>
+				<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
+
+				<array name="hud-cooldown">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 24 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		<!-- Level 3 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::LightningShield</string>
+				<float name="dmg-taken-mul">0.85</float>
+				<int name="cooldown">4000</int>
+				<string name="fx">players/warlock/flame_shield.effect</string>
+				<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
+
+				<array name="hud-cooldown">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 24 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		<!-- Level 4 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::LightningShield</string>
+				<float name="dmg-taken-mul">0.8</float>
+				<int name="cooldown">4000</int>
+				<string name="fx">players/warlock/flame_shield.effect</string>
+				<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
+
+				<array name="hud-cooldown">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 24 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+		<!-- Level 5 -->
+		<dict>
+			<string name="class">Skills::PassiveSkill</string>
+			<dict name="modifier">
+				<string name="class">Modifiers::LightningShield</string>
+				<float name="dmg-taken-mul">0.75</float>
+				<int name="cooldown">4000</int>
+				<string name="fx">players/warlock/flame_shield.effect</string>
+				<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
+
+				<array name="hud-cooldown">
+					<string>gui/icons_buffs.png</string>
+					<int>100</int><vec4>24 24 12 12</vec4>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
