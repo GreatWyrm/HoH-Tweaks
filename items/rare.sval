@@ -759,7 +759,7 @@
 	
 	<dict name="skullsmasher">
 		<string name="name">.item.skullsmasher.name</string>
-		<string name="desc">.item.skullsmasher.desc?hit=5&dmg=30</string>
+		<string name="desc">.item.skullsmasher.desc?hit=5&dmg=25</string>
 		<string name="quality">rare</string>
 		<int name="cost">2750</int>
 		

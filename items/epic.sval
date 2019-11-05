@@ -171,7 +171,7 @@
 	
 	<dict name="searing-sabatons">
 		<string name="name">.item.searing-sabatons.name</string>
-		<string name="desc">.item.searing-sabatons.desc?dur=5&dmg=20</string>
+		<string name="desc">.item.searing-sabatons.desc?dur=5&dmg=40</string>
 		<string name="quality">epic</string>
 		<int name="cost">20000</int>
 

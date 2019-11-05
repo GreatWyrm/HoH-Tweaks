@@ -2767,7 +2767,7 @@
 	<string name="item.shieldbreaker.desc">%chance%% chance to lower enemies Armor by %armor%% for %sec% seconds on Primary Attack.</string>
 
 	<string name="item.skullsmasher.name">Skullsmasher</string>
-	<string name="item.skullsmasher.desc">Every %hit%th Primary Attack hit triggers an explosion on impact dealing 30 Physical damage.</string>
+	<string name="item.skullsmasher.desc">Every %hit%th Primary Attack hit triggers an explosion on impact dealing %dmg% Physical damage.</string>
 
 	<string name="item.spreading-corruption.name">Spreading Corruption</string>
 	<string name="item.spreading-corruption.desc">Primary Attack applies a debuff for %dur% seconds that jumps to a new enemy when the original target is killed. Affected enemies take %dmg%% more damage.</string>

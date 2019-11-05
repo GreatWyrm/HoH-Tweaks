@@ -15,7 +15,7 @@
 				<dict>
 					<string name="class">Modifiers::LightningShield</string>
 					<float name="dmg-taken-mul">0.95</float>
-					<int name="cooldown">4000</int>
+					<int name="cooldown">3000</int>
 					<string name="fx">players/warlock/flame_shield.effect</string>
 					<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
 
@@ -29,7 +29,7 @@
 					<string name="trigger">hurt</string>
 					<bool name="target-self">false</bool>
 					<float name="chance">1</float>
-					<int name="timeout">4000</int>
+					<int name="timeout">3000</int>
 
 					<dict name="effect">
 						<string name="class">ShootBolt</string>
@@ -61,7 +61,7 @@
 				<dict>
 					<string name="class">Modifiers::LightningShield</string>
 					<float name="dmg-taken-mul">0.9</float>
-					<int name="cooldown">4000</int>
+					<int name="cooldown">3000</int>
 					<string name="fx">players/warlock/flame_shield.effect</string>
 					<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
 
@@ -75,7 +75,7 @@
 					<string name="trigger">hurt</string>
 					<bool name="target-self">false</bool>
 					<float name="chance">1</float>
-					<int name="timeout">4000</int>
+					<int name="timeout">3000</int>
 
 					<dict name="effect">
 						<string name="class">ShootBolt</string>
@@ -107,7 +107,7 @@
 				<dict>
 					<string name="class">Modifiers::LightningShield</string>
 					<float name="dmg-taken-mul">0.85</float>
-					<int name="cooldown">4000</int>
+					<int name="cooldown">3000</int>
 					<string name="fx">players/warlock/flame_shield.effect</string>
 					<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
 
@@ -121,7 +121,7 @@
 					<string name="trigger">hurt</string>
 					<bool name="target-self">false</bool>
 					<float name="chance">1</float>
-					<int name="timeout">4000</int>
+					<int name="timeout">3000</int>
 
 					<dict name="effect">
 						<string name="class">ShootBolt</string>
@@ -153,7 +153,7 @@
 				<dict>
 					<string name="class">Modifiers::LightningShield</string>
 					<float name="dmg-taken-mul">0.8</float>
-					<int name="cooldown">4000</int>
+					<int name="cooldown">3000</int>
 					<string name="fx">players/warlock/flame_shield.effect</string>
 					<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
 
@@ -167,7 +167,7 @@
 					<string name="trigger">hurt</string>
 					<bool name="target-self">false</bool>
 					<float name="chance">1</float>
-					<int name="timeout">4000</int>
+					<int name="timeout">3000</int>
 
 					<dict name="effect">
 						<string name="class">ShootBolt</string>
@@ -199,7 +199,7 @@
 				<dict>
 					<string name="class">Modifiers::LightningShield</string>
 					<float name="dmg-taken-mul">0.75</float>
-					<int name="cooldown">4000</int>
+					<int name="cooldown">3000</int>
 					<string name="fx">players/warlock/flame_shield.effect</string>
 					<string name="fx-charge">players/warlock/flame_shield_charge.effect</string>
 
@@ -213,7 +213,7 @@
 					<string name="trigger">hurt</string>
 					<bool name="target-self">false</bool>
 					<float name="chance">1</float>
-					<int name="timeout">4000</int>
+					<int name="timeout">3000</int>
 
 					<dict name="effect">
 						<string name="class">ShootBolt</string>
