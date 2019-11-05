@@ -17,7 +17,7 @@ namespace Modifiers
                 return vec2(1.0f, 1.0f);
             }
             int effectiveGold = clamp(record.runGold, 0, goldCap);
-			return vec2(1.0f, 1.0f) * effectiveGold/rate;
+			return vec2(1.0f, 1.0f) + effectiveGold/rate * 0.01f;
 		}
 	}
 }

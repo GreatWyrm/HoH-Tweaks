@@ -49,15 +49,16 @@
             <string>shopping-coupon</string>
         </array>
 
-        <dict name="2">
-            <string name="desc">Keys give you Attack Power and Skill Power (Cap at 15 each)</string>
+        <dict name="3">
+            <string name="desc">Keys give you Attack Power and Skill Power (Cap at 10 each)</string>
             <array name="modifiers">
                 <dict>
                     <string name="class">Modifiers::KeyPower</string>
                     <int name="bronze-power">1</int>
-                    <int name="silver-power">2</int>
-                    <int name="gold-power">3</int>
-                    <int name="ace-power">5</int>
+                    <int name="silver-power">1</int>
+                    <int name="gold-power">2</int>
+                    <int name="ace-power">3</int>
+                    <int name="cap">10</int>
                 </dict>
             </array>
         </dict>
