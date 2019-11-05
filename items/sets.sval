@@ -746,8 +746,17 @@
 			<string>markhams-amulet</string>
 		</array>
 		
+		<dict name="3">
+			<string name="desc">.item.sets.markhams-mastery.desc.1?gain=+0.25</string>
+			
+			<dict name="modifier">
+				<string name="class">Modifiers::Markham</string>
+				<float name="armor">0.25</float>
+				<float name="resistance">0.25</float>
+			</dict>
+		</dict>
 		<dict name="4">
-			<string name="desc">.item.sets.markhams-mastery.desc.1?gain=+0.5</string>
+			<string name="desc">.item.sets.markhams-mastery.desc.1?gain=+0.25</string>
 			
 			<dict name="modifier">
 				<string name="class">Modifiers::Markham</string>

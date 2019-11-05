@@ -2893,7 +2893,8 @@
 
 	<string name="item.sets.markhams-mastery.name">Markham's Mastery</string>
 	<string name="item.sets.markhams-mastery.desc.1">%gain% Armor and Resistance per item in your inventory.</string>
-	<string name="item.sets.markhams-mastery.desc.2">%gain%% Attack and Skill speed per item in your inventory.</string>
+	<string name="item.sets.markhams-mastery.desc.2">%gain% Armor and Resistance per item in your inventory.</string>
+	<string name="item.sets.markhams-mastery.desc.3">%gain%% Attack and Skill speed per item in your inventory.</string>
 
 	<string name="item.sets.boots-of-speed.name">Boots of Speed</string>
 
