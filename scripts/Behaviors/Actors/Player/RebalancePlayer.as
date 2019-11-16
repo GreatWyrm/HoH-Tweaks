@@ -221,7 +221,7 @@ class RebalancePlayer : Player
 			return false;
 		if(debuffImmune && buff.m_def.m_debuff) {
 			debuffImmune = false;
-			debuffImmuneTime = 5;
+			debuffImmuneTime = 0;
 			return false;
 		}
 		return PlayerBase::ApplyBuff(buff);

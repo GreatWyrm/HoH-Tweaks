@@ -89,6 +89,7 @@
                 <string name="class">Modifiers::TriggerEffect</string>
 			    <string name="trigger">potion</string>
 			    <float name="chance">1</float>
+                <bool name="target-self">true</bool>
 			
 			    <dict name="effect">
 				    <string name="class">SpawnUnit</string>
