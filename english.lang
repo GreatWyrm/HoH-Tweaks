@@ -1,7 +1,6 @@
 ﻿<lang>
 	<!-- SYSTEM -->
 
-
 	<!-- character screen -->
 	<string name="hud.character.map">MAP</string>
 	<string name="hud.character.character">CHARACTER</string>
