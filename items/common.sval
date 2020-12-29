@@ -377,7 +377,7 @@
 	
 	<dict name="gladiators-net">
 		<string name="name">.item.gladiators-net.name</string>
-		<string name="desc">.item.gladiators-net.desc?chance=20&dur=3</string>
+		<string name="desc">.item.gladiators-net.desc?chance=10&dur=3</string>
 		<string name="quality">common</string>
 		<int name="cost">300</int>
 
@@ -391,7 +391,7 @@
 		<dict name="modifier">
 			<string name="class">Modifiers::TriggerEffect</string>
 			<string name="trigger">hit</string>
-			<float name="chance">0.2</float>
+			<float name="chance">0.1</float>
 			<dict name="effect">
 				<string name="class">ApplyBuff</string>
 				<string name="buff">actors/buffs.sval:disarm</string>
@@ -488,6 +488,50 @@
 			<dict>
 				<string name="class">Modifiers::Stats</string>
 				<int name="health">15</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="hunters-knife">
+		<string name="name">.item.hunters-knife.name</string>
+		<string name="desc">.item.hunters-knife.desc?dmg=+20&chance=2.5</string>
+		<string name="quality">common</string>
+		<int name="cost">250</int>
+		
+		<bool name="has-blueprints">true</bool>
+		<string name="dlc">mt</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>144 0 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::EnemyTypeFilter</string>
+				<string name="type">beast</string>
+				<array name="modifiers">
+					<dict>
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.2</float>
+					</dict>
+					
+					<dict>
+						<string name="class">Modifiers::TriggerEffect</string>
+						<string name="trigger">kill</string>
+						<float name="chance">0.025</float>
+						<bool name="ignore-no-loot-units">true</bool>
+						
+						<dict name="effect">
+							<string name="class">SpawnUnit</string>
+							<string name="unit">items/health_meat.unit</string>
+							<bool name="safe-spawn">true</bool>
+							<bool name="players-in-sight">true</bool>
+							<bool name="safe-ignore-target">true</bool>
+							<int name="spawn-dist">0</int>
+						</dict>
+					</dict>
+				</array>
 			</dict>
 		</array>
 	</dict>
@@ -843,6 +887,28 @@
 		</array>
 	</dict>
 	
+	<dict name="papers-of-nobility">
+		<string name="name">.item.papers-of-nobility.name</string>
+		<string name="desc">.item.papers-of-nobility.desc?num=25</string>
+		<string name="quality">common</string>
+		<int name="cost">500</int>
+		
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">true</bool>
+		<string name="blocked-flag">in_survival</string>
+		<string name="dlc">mt</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>132 0 12 12</vec4>
+		</array>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::Tax</string>
+			<float name="midpoint-mul">1.25</float>
+		</dict>
+	</dict>
+	
 	<dict name="pot-helm">
 		<string name="name">.item.pot-helm.name</string>
 		<string name="desc">.item.pot-helm.desc?chance=10</string>
@@ -1155,6 +1221,11 @@
 		<bool name="has-blueprints">true</bool>
 		<bool name="can-attune">false</bool>
 		<string name="blocked-flag">in_survival</string>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::ShopCost</string>
+			<float name="mul">0.75</float>
+		</dict>
 
 		<array name="icon">
 			<string>items/items.png</string>

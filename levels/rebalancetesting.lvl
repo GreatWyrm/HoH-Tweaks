@@ -81,30 +81,10 @@
 		<string name="environment">system/default.env</string>
 	</dict>
 	<dict name="units">
-		<array name="items/key_silver.unit">
-			<vec2>48 -568</vec2>
-			<int>64</int>
-			<vec2>56 -592</vec2>
-			<int>65</int>
-			<vec2>40 -608</vec2>
-			<int>66</int>
-			<vec2>16 -576</vec2>
-			<int>67</int>
-			<vec2>24 -584</vec2>
-			<int>68</int>
-			<vec2>48 -616</vec2>
-			<int>69</int>
-			<vec2>32 -584</vec2>
-			<int>62</int>
-			<vec2>16 -616</vec2>
-			<int>63</int>
-			<vec2>16 -608</vec2>
-			<int>61</int>
-		</array>
 		<array name=":Physics_Circle">
 			<array>
 				<vec2>-120 -386</vec2>
-				<int>1</int>
+				<int>34</int>
 				<dict>
 					<bool name="active">t</bool>
 					<float name="radius">12</float>
@@ -115,144 +95,164 @@
 				</dict>
 			</array>
 		</array>
-		<array name="doodads/generic/button_wall.unit"><vec2>-120 -376</vec2><int>12</int></array>
-		<array name="doodads/generic/chest_ace.unit"><vec2>312 -512</vec2><int>11</int><vec2>320 -488</vec2><int>10</int><vec2>280 -488</vec2><int>9</int><vec2>280 -512</vec2><int>8</int></array>
+		<array name="doodads/generic/button_wall.unit"><vec2>-120 -376</vec2><int>35</int></array>
+		<array name="doodads/generic/chest_ace.unit"><vec2>320 -488</vec2><int>36</int><vec2>312 -512</vec2><int>37</int><vec2>280 -512</vec2><int>38</int><vec2>280 -488</vec2><int>39</int></array>
 		<array name="actors/archer_1_elite.unit">
-			<vec2>376.101 -935.88</vec2>
-			<int>3</int>
-			<vec2>360.115 -903.877</vec2>
-			<int>4</int>
-			<vec2>320.138 -911.862</vec2>
-			<int>5</int>
-			<vec2>304.108 -959.888</vec2>
-			<int>7</int>
-			<vec2>392.103 -903.879</vec2>
-			<int>6</int>
-			<vec2>344.098 -935.883</vec2>
-			<int>2</int>
-		</array>
-		<array name="items/key_bronze.unit">
-			<vec2>-216 -544</vec2>
-			<int>73</int>
-			<vec2>-176 -576</vec2>
-			<int>72</int>
-			<vec2>-200 -552</vec2>
-			<int>71</int>
-			<vec2>-176 -552</vec2>
-			<int>70</int>
-			<vec2>-200 -568</vec2>
-			<int>75</int>
-			<vec2>-208 -600</vec2>
-			<int>74</int>
-		</array>
-		<array name="doodads/generic/chest_gold.unit">
-			<vec2>-88 -528</vec2>
-			<int>34</int>
-			<vec2>-88 -464</vec2>
-			<int>33</int>
-			<vec2>-80 -504</vec2>
-			<int>32</int>
-			<vec2>-64 -512</vec2>
-			<int>30</int>
-			<vec2>-56 -528</vec2>
-			<int>29</int>
-			<vec2>-56 -488</vec2>
-			<int>31</int>
-		</array>
-		<array name="doodads/generic/target_dummy_normal.unit"><vec2>-16 -864</vec2><int>55</int><vec2>160 -864</vec2><int>56</int></array>
-		<array name="items/money_diamond_gold_large.unit">
-			<vec2>-192 -840</vec2>
-			<int>42</int>
-			<vec2>-208 -856</vec2>
-			<int>43</int>
-			<vec2>-208 -840</vec2>
-			<int>44</int>
-			<vec2>-224 -856</vec2>
-			<int>45</int>
-			<vec2>-224 -840</vec2>
-			<int>46</int>
-			<vec2>-208 -888</vec2>
-			<int>47</int>
-			<vec2>-208 -872</vec2>
-			<int>48</int>
-			<vec2>-224 -888</vec2>
-			<int>49</int>
-			<vec2>-224 -872</vec2>
-			<int>50</int>
-			<vec2>-128 -840</vec2>
-			<int>51</int>
-			<vec2>-112 -840</vec2>
-			<int>52</int>
-			<vec2>-128 -856</vec2>
-			<int>53</int>
-			<vec2>-112 -856</vec2>
-			<int>54</int>
-			<vec2>-176 -840</vec2>
-			<int>40</int>
-			<vec2>-144 -856</vec2>
-			<int>35</int>
-			<vec2>-144 -840</vec2>
-			<int>36</int>
-			<vec2>-160 -856</vec2>
-			<int>37</int>
-			<vec2>-160 -840</vec2>
-			<int>38</int>
-			<vec2>-176 -856</vec2>
-			<int>39</int>
-			<vec2>-192 -856</vec2>
-			<int>41</int>
-		</array>
-		<array name="doodads/generic/chest_ace_buried.unit"><vec2>312 -432</vec2><int>13</int></array>
-		<array name="doodads/generic/target_dummy_magic.unit"><vec2>96 -872</vec2><int>20</int></array>
-		<array name="doodads/generic/chest_bronze.unit">
-			<vec2>-264 -504</vec2>
-			<int>22</int>
-			<vec2>-280 -472</vec2>
-			<int>21</int>
-			<vec2>-264 -448</vec2>
-			<int>28</int>
-			<vec2>-216 -488</vec2>
-			<int>27</int>
-			<vec2>-304 -448</vec2>
-			<int>26</int>
-			<vec2>-248 -472</vec2>
-			<int>25</int>
-			<vec2>-216 -456</vec2>
-			<int>24</int>
-			<vec2>-288 -496</vec2>
-			<int>23</int>
+			<vec2>304.13 -959.873</vec2>
+			<int>61</int>
+			<vec2>320.152 -911.846</vec2>
+			<int>60</int>
+			<vec2>392.124 -903.853</vec2>
+			<int>56</int>
+			<vec2>360.135 -903.868</vec2>
+			<int>57</int>
+			<vec2>344.115 -935.869</vec2>
+			<int>58</int>
+			<vec2>376.125 -935.859</vec2>
+			<int>59</int>
 		</array>
 		<array name="doodads/generic/chest_silver.unit">
 			<vec2>16 -528</vec2>
-			<int>14</int>
-			<vec2>24 -472</vec2>
-			<int>15</int>
+			<int>67</int>
 			<vec2>32 -520</vec2>
-			<int>16</int>
+			<int>66</int>
 			<vec2>32 -496</vec2>
-			<int>18</int>
+			<int>65</int>
+			<vec2>24 -472</vec2>
+			<int>64</int>
 			<vec2>-8 -472</vec2>
-			<int>17</int>
+			<int>63</int>
 		</array>
-		<array name="doodads/generic/target_dummy_armored.unit"><vec2>32 -864</vec2><int>57</int></array>
-		<array name="doodads/walls/mine_granite/single.unit"><vec2>-128 -392</vec2><int>19</int></array>
-		<array name="items/key_gold.unit">
-			<vec2>-80 -608</vec2>
+		<array name="doodads/generic/chest_ace_buried.unit"><vec2>312 -432</vec2><int>62</int></array>
+		<array name="items/money_diamond_gold_large.unit">
+			<vec2>-128 -840</vec2>
+			<int>17</int>
+			<vec2>-176 -840</vec2>
+			<int>8</int>
+			<vec2>-224 -888</vec2>
+			<int>3</int>
+			<vec2>-192 -840</vec2>
+			<int>21</int>
+			<vec2>-208 -856</vec2>
+			<int>22</int>
+			<vec2>-208 -840</vec2>
+			<int>6</int>
+			<vec2>-160 -840</vec2>
+			<int>13</int>
+			<vec2>-160 -856</vec2>
+			<int>12</int>
+			<vec2>-144 -840</vec2>
+			<int>11</int>
+			<vec2>-144 -856</vec2>
+			<int>10</int>
+			<vec2>-112 -856</vec2>
+			<int>9</int>
+			<vec2>-112 -840</vec2>
+			<int>7</int>
+			<vec2>-224 -840</vec2>
+			<int>5</int>
+			<vec2>-224 -856</vec2>
+			<int>16</int>
+			<vec2>-192 -856</vec2>
+			<int>15</int>
+			<vec2>-176 -856</vec2>
+			<int>14</int>
+			<vec2>-224 -872</vec2>
+			<int>18</int>
+			<vec2>-128 -856</vec2>
+			<int>19</int>
+			<vec2>-208 -888</vec2>
+			<int>4</int>
+			<vec2>-208 -872</vec2>
+			<int>20</int>
+		</array>
+		<array name="doodads/generic/target_dummy_normal.unit"><vec2>-16 -864</vec2><int>24</int><vec2>160 -864</vec2><int>23</int></array>
+		<array name="doodads/generic/chest_gold.unit">
+			<vec2>-88 -464</vec2>
 			<int>78</int>
-			<vec2>-64 -592</vec2>
+			<vec2>-88 -528</vec2>
 			<int>77</int>
-			<vec2>-96 -592</vec2>
-			<int>76</int>
-			<vec2>-56 -576</vec2>
+			<vec2>-56 -488</vec2>
 			<int>82</int>
-			<vec2>-48 -592</vec2>
+			<vec2>-56 -528</vec2>
 			<int>81</int>
-			<vec2>-48 -608</vec2>
+			<vec2>-64 -512</vec2>
 			<int>80</int>
-			<vec2>-72 -568</vec2>
+			<vec2>-80 -504</vec2>
 			<int>79</int>
 		</array>
-		<array name="items/key_ace.unit"><vec2>112 -584</vec2><int>58</int><vec2>168 -608</vec2><int>59</int><vec2>128 -616</vec2><int>60</int></array>
+		<array name="doodads/generic/chest_bronze.unit">
+			<vec2>-216 -488</vec2>
+			<int>44</int>
+			<vec2>-264 -448</vec2>
+			<int>43</int>
+			<vec2>-304 -448</vec2>
+			<int>46</int>
+			<vec2>-248 -472</vec2>
+			<int>45</int>
+			<vec2>-288 -496</vec2>
+			<int>48</int>
+			<vec2>-216 -456</vec2>
+			<int>47</int>
+			<vec2>-280 -472</vec2>
+			<int>42</int>
+			<vec2>-264 -504</vec2>
+			<int>41</int>
+		</array>
+		<array name="doodads/generic/target_dummy_magic.unit"><vec2>96 -872</vec2><int>40</int></array>
+		<array name="doodads/generic/target_dummy_armored.unit"><vec2>32 -864</vec2><int>1</int></array>
+		<array name="doodads/walls/mine_granite/single.unit"><vec2>-128 -392</vec2><int>2</int></array>
+		<array name="items/key_silver.unit">
+			<vec2>16 -616</vec2>
+			<int>32</int>
+			<vec2>16 -576</vec2>
+			<int>28</int>
+			<vec2>56 -592</vec2>
+			<int>31</int>
+			<vec2>48 -568</vec2>
+			<int>30</int>
+			<vec2>40 -608</vec2>
+			<int>26</int>
+			<vec2>24 -584</vec2>
+			<int>29</int>
+			<vec2>48 -616</vec2>
+			<int>25</int>
+			<vec2>16 -608</vec2>
+			<int>27</int>
+			<vec2>32 -584</vec2>
+			<int>33</int>
+		</array>
+		<array name="items/key_bronze.unit">
+			<vec2>-216 -544</vec2>
+			<int>74</int>
+			<vec2>-176 -576</vec2>
+			<int>75</int>
+			<vec2>-176 -552</vec2>
+			<int>76</int>
+			<vec2>-200 -568</vec2>
+			<int>72</int>
+			<vec2>-208 -600</vec2>
+			<int>71</int>
+			<vec2>-200 -552</vec2>
+			<int>73</int>
+		</array>
+		<array name="items/key_ace.unit"><vec2>128 -616</vec2><int>68</int><vec2>168 -608</vec2><int>69</int><vec2>112 -584</vec2><int>70</int></array>
+		<array name="items/key_gold.unit">
+			<vec2>-64 -592</vec2>
+			<int>52</int>
+			<vec2>-48 -592</vec2>
+			<int>51</int>
+			<vec2>-80 -608</vec2>
+			<int>50</int>
+			<vec2>-48 -608</vec2>
+			<int>49</int>
+			<vec2>-72 -568</vec2>
+			<int>55</int>
+			<vec2>-56 -576</vec2>
+			<int>54</int>
+			<vec2>-96 -592</vec2>
+			<int>53</int>
+		</array>
 	</dict>
 	<array name="scripts">
 		<array><string>LevelStart</string><int>83</int><vec3>-114 -362 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
@@ -432,7 +432,7 @@
 			<int>-1</int>
 			<bool>f</bool>
 			<dict>
-				<array name="Areas"><int>1</int></array>
+				<array name="Areas"><int>34</int></array>
 			</dict>
 			<array>
 				<int>101</int>
@@ -717,31 +717,75 @@
 				<string name="ItemID">hoarders-vest</string>
 			</dict>
 		</array>
+		<array>
+			<string>SpawnItem</string>
+			<int>125</int>
+			<vec3>-104 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="ItemID">duelists-edge</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnItem</string>
+			<int>126</int>
+			<vec3>-56 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="ItemID">rapier-of-retaliation</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnItem</string>
+			<int>127</int>
+			<vec3>-8 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="ItemID">slippery-cloak</string>
+			</dict>
+		</array>
+		<array>
+			<string>SpawnItem</string>
+			<int>128</int>
+			<vec3>24 -64 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<string name="ItemID">vendors-coin</string>
+			</dict>
+		</array>
 	</array>
 	<array name="prefabs">
-		<string>prefabs/archives/21x21_chest_firetraps.pfb</string>
-		<vec3>-120 -1256 0</vec3>
-		<string>prefabs/archives/21x21_chest_firetraps_2.pfb</string>
-		<vec3>408 -1264 0</vec3>
 		<string>prefabs/coliseum/arena/traps/supplement/floor_pressure_spikes.pfb</string>
 		<vec3>192 -336 0</vec3>
-		<string>prefabs/pickups/desert_gold_2x2.pfb</string>
-		<vec3>192 -200 0</vec3>
-		<string>prefabs/pickups/desert_gold_2x2.pfb</string>
-		<vec3>128 -208 0</vec3>
-		<string>prefabs/pickups/desert_gold_2x2.pfb</string>
-		<vec3>72 -216 0</vec3>
-		<string>prefabs/pickups/desert_gold_2x2.pfb</string>
-		<vec3>248 -192 0</vec3>
-		<string>prefabs/prison/junction_2x3_trap_spikes.pfb</string>
-		<vec3>144 -304 0</vec3>
-		<string>prefabs/pickups/loot_3x1_ore_b.pfb</string>
-		<vec3>184 -240 0</vec3>
+		<string>prefabs/archives/21x21_chest_firetraps_2.pfb</string>
+		<vec3>408 -1264 0</vec3>
+		<string>prefabs/archives/21x21_chest_firetraps.pfb</string>
+		<vec3>-120 -1256 0</vec3>
 		<string>prefabs/pickups/loot_3x1_ore_b.pfb</string>
 		<vec3>136 -240 0</vec3>
 		<string>prefabs/pickups/loot_3x1_ore_b.pfb</string>
 		<vec3>224 -240 0</vec3>
 		<string>prefabs/pickups/loot_3x1_ore_b.pfb</string>
+		<vec3>184 -240 0</vec3>
+		<string>prefabs/pickups/loot_3x1_ore_b.pfb</string>
 		<vec3>80 -240 0</vec3>
+		<string>prefabs/pickups/desert_gold_2x2.pfb</string>
+		<vec3>248 -192 0</vec3>
+		<string>prefabs/pickups/desert_gold_2x2.pfb</string>
+		<vec3>128 -208 0</vec3>
+		<string>prefabs/pickups/desert_gold_2x2.pfb</string>
+		<vec3>192 -200 0</vec3>
+		<string>prefabs/pickups/desert_gold_2x2.pfb</string>
+		<vec3>72 -216 0</vec3>
+		<string>prefabs/prison/junction_2x3_trap_spikes.pfb</string>
+		<vec3>144 -304 0</vec3>
 	</array>
 </dict>

@@ -32,6 +32,7 @@
 			<dict name="modifier">
 				<string name="class">Modifiers::TriggerEffect</string>
 				<string name="trigger">kill</string>
+				<bool name="ignore-no-loot-units">true</bool>
 				<bool name="target-self">true</bool>
 				<dict name="effect">
 					<string name="class">GiveGold</string>
@@ -291,35 +292,7 @@
 			</array>
 		</dict>
 	</dict>
-	
-<!--
-	<dict>
-		<string name="name">Shoppers Delight</string>
 
-		<array name="items">
-			<string>cloak-of-many-pockets</string>
-			<string>vendors-coin</string>
-			<string>fancy-plume</string>
-		</array>
-		
-		<dict name="2">
-			<string name="desc">+25% more gold</string>
-			
-			<dict name="modifier">
-				<string name="class">Modifiers::GoldGain</string>
-				<float name="scale">1.25</float>
-			</dict>
-		</dict>
-		<dict name="3">
-			<string name="desc">+25% more gold</string>
-			
-			<dict name="modifier">
-				<string name="class">Modifiers::GoldGain</string>
-				<float name="scale">1.5</float>
-			</dict>
-		</dict>
-	</dict>
--->
 
 	<dict>
 		<string name="name">.item.sets.spheres-of-power.name</string>
@@ -343,9 +316,9 @@
 			<dict name="modifier">
 				<string name="class">Modifiers::Combo</string>
 				<dict name="effect">
-					<string name="class">Nova</string>
+					<string name="class">ComboNova</string>
 					<int name="projectiles">6</int>
-					<string name="projectile">players/combo_nova_1.unit</string>
+					<int name="level">1</int>
 				</dict>
 			</dict>
 		</dict>
@@ -357,9 +330,9 @@
 				<dict name="modifier">
 					<string name="class">Modifiers::Combo</string>
 					<dict name="effect">
-						<string name="class">Nova</string>
+						<string name="class">ComboNova</string>
 						<int name="projectiles">6</int>
-						<string name="projectile">players/combo_nova_1.unit</string>
+						<int name="level">1</int>
 					</dict>
 				</dict>
 			
@@ -380,9 +353,9 @@
 				<dict name="modifier">
 					<string name="class">Modifiers::Combo</string>
 					<dict name="effect">
-						<string name="class">Nova</string>
+						<string name="class">ComboNova</string>
 						<int name="projectiles">10</int>
-						<string name="projectile">players/combo_nova_2.unit</string>
+						<int name="level">2</int>
 					</dict>
 				</dict>
 				
@@ -403,9 +376,9 @@
 				<dict name="modifier">
 					<string name="class">Modifiers::Combo</string>
 					<dict name="effect">
-						<string name="class">Nova</string>
+						<string name="class">ComboNova</string>
 						<int name="projectiles">10</int>
-						<string name="projectile">players/combo_nova_2.unit</string>
+						<int name="level">2</int>
 					</dict>
 				</dict>
 				
@@ -426,9 +399,9 @@
 				<dict name="modifier">
 					<string name="class">Modifiers::Combo</string>
 					<dict name="effect">
-						<string name="class">Nova</string>
+						<string name="class">ComboNova</string>
 						<int name="projectiles">14</int>
-						<string name="projectile">players/combo_nova_3.unit</string>
+						<int name="level">3</int>
 					</dict>
 				</dict>
 				
@@ -449,9 +422,9 @@
 				<dict name="modifier">
 					<string name="class">Modifiers::Combo</string>
 					<dict name="effect">
-						<string name="class">Nova</string>
+						<string name="class">ComboNova</string>
 						<int name="projectiles">14</int>
-						<string name="projectile">players/combo_nova_3.unit</string>
+						<int name="level">3</int>
 					</dict>
 				</dict>
 				<dict>
@@ -471,9 +444,9 @@
 				<dict name="modifier">
 					<string name="class">Modifiers::Combo</string>
 					<dict name="effect">
-						<string name="class">Nova</string>
+						<string name="class">ComboNova</string>
 						<int name="projectiles">18</int>
-						<string name="projectile">players/combo_nova_4.unit</string>
+						<int name="level">4</int>
 					</dict>
 				</dict>
 			
@@ -494,9 +467,9 @@
 				<dict name="modifier">
 					<string name="class">Modifiers::Combo</string>
 					<dict name="effect">
-						<string name="class">Nova</string>
+						<string name="class">ComboNova</string>
 						<int name="projectiles">18</int>
-						<string name="projectile">players/combo_nova_4.unit</string>
+						<int name="level">4</int>
 					</dict>
 				</dict>
 				
@@ -517,9 +490,9 @@
 				<dict name="modifier">
 					<string name="class">Modifiers::Combo</string>
 					<dict name="effect">
-						<string name="class">Nova</string>
+						<string name="class">ComboNova</string>
 						<int name="projectiles">18</int>
-						<string name="projectile">players/combo_nova_4.unit</string>
+						<int name="level">4</int>
 					</dict>
 				</dict>
 				
@@ -942,6 +915,132 @@
 						<string name="class">Modifiers::Damage</string>
 						<float name="mul">2</float>
 					</dict>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.rings-of-recovery.name</string>
+		
+		<array name="items">
+			<string>ring-mana</string>
+			<string>ring-health</string>
+			<string>ring-of-rejuvenation</string>
+			<string>greater-ring-rejuvenation</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.rings-of-recovery.desc?num=+10</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Regen</string>
+					<float name="health-mul">1.1</float>
+				</dict>
+				<dict name="modifier">
+					<string name="class">Modifiers::Regen</string>
+					<float name="mana-mul">1.1</float>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="3">
+			<string name="desc">.item.sets.rings-of-recovery.desc?num=+10</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Regen</string>
+					<float name="health-mul">1.2</float>
+				</dict>
+				<dict name="modifier">
+					<string name="class">Modifiers::Regen</string>
+					<float name="mana-mul">1.2</float>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="4">
+			<string name="desc">.item.sets.rings-of-recovery.desc?num=+10</string>
+			
+			<array name="modifiers">
+				<dict name="modifier">
+					<string name="class">Modifiers::Regen</string>
+					<float name="health-mul">1.3</float>
+				</dict>
+				<dict name="modifier">
+					<string name="class">Modifiers::Regen</string>
+					<float name="mana-mul">1.3</float>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.the-shining-knight.name</string>
+		
+		<array name="items">
+			<string>great-helm</string>
+			<string>full-plate-mail</string>
+			<string>tower-shield</string>
+		</array>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.the-shining-knight.desc?num=2</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::Block</string>
+					<float name="chance">1</float>
+					<int name="physical">2</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="3">
+			<string name="desc">.item.sets.the-shining-knight.desc?num=3</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::Block</string>
+					<float name="chance">1</float>
+					<int name="physical">5</int>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict>
+		<string name="name">.item.sets.crescents-of-the-moon.name</string>
+		
+		<array name="items">
+			<string>waning-crescent</string>
+			<string>waxing-crescent</string>
+		</array>
+		
+		<dict name="1">
+			<string name="desc">.item.sets.crescents-of-the-moon.desc.1?num=2</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::PerMtBlocks</string>
+					<int name="attack-power-per-mt-blocks">2</int>
+				</dict>
+			</array>
+		</dict>
+		
+		<dict name="2">
+			<string name="desc">.item.sets.crescents-of-the-moon.desc.2?num=5</string>
+			
+			<array name="modifiers">
+				<dict>
+					<string name="class">Modifiers::PerMtBlocks</string>
+					<int name="attack-power-per-mt-blocks">2</int>
+				</dict>
+			
+				<dict>
+					<string name="class">Modifiers::PerMtBlocks</string>
+					<int name="skill-power-per-mt-blocks">5</int>
 				</dict>
 			</array>
 		</dict>

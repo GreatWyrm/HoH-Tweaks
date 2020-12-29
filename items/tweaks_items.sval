@@ -278,6 +278,11 @@
             <string>items/tweaks_items.png</string>
             <int>100</int><vec4>72 0 12 12</vec4>
         </array>
+        <array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::ShoppingCoupon</string>
+			</dict>
+		</array>
     </dict>
     <dict name="warded-armor">
 		<string name="name">Warded Armor</string>

@@ -1,13 +1,12 @@
 class RebalanceChest : Chest
 {
-  RebalanceChest(UnitPtr unit, SValue& params)
-  {
-    super(unit, params);
-  }
-
-  void Use(PlayerBase@ player) override
-  {
-      	if (m_unit.IsDestroyed() || !m_unit.IsValid())
+  	RebalanceChest(UnitPtr unit, SValue& params)
+  	{
+   		super(unit, params);
+  	}
+	void Use(PlayerBase@ player)
+	{
+		if (m_unit.IsDestroyed() || !m_unit.IsValid())
 			return;
 	
 		if (m_lock >= 0)
@@ -18,7 +17,7 @@ class RebalanceChest : Chest
 				print("No key!");
 				return;
 			}
-            // Code for the Paperclip item
+			// Code for the Paperclip item
             if(player.m_record !is null && player.m_record.items.find("paperclip") > -1) {
                 float paperclip_chance = .2f;
                 if(!roll_chance(player, paperclip_chance)) {
@@ -45,13 +44,12 @@ class RebalanceChest : Chest
 	}
     bool roll_chance(PlayerBase@ player, float chance, bool flipLuck = false)
     {
-	float c = clamp(chance, 0.0f, 1.0f);
-	if (player !is null && player.m_currLuck != 0)
-	{
-		float l = player.m_currLuck * (flipLuck ? -1 : 1);
-		c = 1 - pow(1 - c, pow(2, l / 10.0f));
-	}
-	
-	return randf() <= c;
+		float c = clamp(chance, 0.0f, 1.0f);
+		if (player !is null && player.m_currLuck != 0)
+		{
+			float l = player.m_currLuck * (flipLuck ? -1 : 1);
+			c = 1 - pow(1 - c, pow(2, l / 10.0f));
+		}
+		return randf() <= c;
     }
 }

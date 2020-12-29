@@ -142,7 +142,7 @@
 	
 	<dict name="blood-dagger">
 		<string name="name">.item.blood-dagger.name</string>
-		<string name="desc">.item.blood-dagger.desc?chance=5&heal=5</string>
+		<string name="desc">.item.blood-dagger.desc?chance=10&health=2.5</string>
 		<string name="quality">uncommon</string>
 		<int name="cost">850</int>
 		
@@ -156,11 +156,16 @@
 		<dict name="modifier">
 			<string name="class">Modifiers::TriggerEffect</string>
 			<string name="trigger">hit</string>
-			<float name="chance">0.05</float>
+			<float name="chance">0.1</float>
 			<bool name="target-self">true</bool>
+			<!-- <dict name="effect"> -->
+				<!-- <string name="class">Heal</string> -->
+				<!-- <int name="heal">5</int> -->
+			<!-- </dict> -->
+			
 			<dict name="effect">
-				<string name="class">Heal</string>
-				<int name="heal">5</int>
+				<string name="class">Decimate</string>
+				<float name="amount">-0.025</float>
 			</dict>
 		</dict>
 	</dict>
@@ -231,6 +236,43 @@
 				<string name="buff">items/buffs.sval:blowgun</string>
 			</dict>
 		</dict>
+	</dict>
+	
+	<dict name="bomb-pouch">
+		<string name="name">.item.bomb-pouch.name</string>
+		<string name="desc">.item.bomb-pouch.desc?num=+10&dmg=100</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">750</int>
+
+		<bool name="has-blueprints">true</bool>
+		<string name="dlc">mt</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>180 0 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::Damage</string>
+				<int name="spell-power">10</int>
+			</dict>
+		
+			<dict name="modifier">
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">evade</string>
+				<int name="timeout">0</int>
+				<bool name="target-self">true</bool>
+
+				<dict name="effect">
+					<string name="class">SpawnUnit</string>
+					<string name="unit">items/projectiles/bomb.unit</string>
+					<bool name="safe-spawn">false</bool>
+					<int name="spawn-dist">0</int>
+					<vec2 name="offset">0 0</vec2>
+				</dict>
+			</dict>
+		</array>
 	</dict>
 	
 	<dict name="bracers-of-quickness">
@@ -346,6 +388,89 @@
 			<dict>
 				<string name="class">Modifiers::Damage</string>
 				<int name="attack-power">20</int>
+			</dict>
+		</array>
+	</dict>
+	
+	<dict name="elven-ruby">
+		<string name="name">.item.elven-ruby.name</string>
+		<string name="desc">.item.elven-ruby.desc?dmg=+50&dur=3&cd=7</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">1000</int>
+		
+		<bool name="has-blueprints">true</bool>
+		<bool name="can-attune">false</bool>
+		<string name="dlc">mt</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>192 0 12 12</vec4>
+		</array>
+		
+		<dict name="modifier">
+			<string name="class">Modifiers::TriggerEffect</string>
+			<string name="trigger">castspell</string>
+			<bool name="target-self">true</bool>
+			<float name="chance">1</float>
+			<int name="timeout">7000</int>
+
+			<array name="effects">
+				<dict name="effect">
+					<string name="class">ApplyBuff</string>
+					<string name="buff">items/buffs.sval:elven-ruby</string>
+				</dict>
+				<dict>
+					<string name="class">PlaySound</string>
+					<string name="sound">event:/item/elven_ruby</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<dict name="essence-collector">
+		<string name="name">.item.essence-collector.name</string>
+		<string name="desc">.item.essence-collector.desc?dmg=+20&chance=7.5</string>
+		<string name="quality">uncommon</string>
+		<int name="cost">1000</int>
+		
+		<bool name="has-blueprints">true</bool>
+		<string name="dlc">mt</string>
+		
+		<array name="icon">
+			<string>items/items.png</string>
+			<int>100</int><vec4>168 0 12 12</vec4>
+		</array>
+
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::EnemyTypeFilter</string>
+				<string name="type">undead</string>
+				<array name="modifiers">
+					<dict>
+						<string name="class">Modifiers::Damage</string>
+						<float name="mul">1.2</float>
+					</dict>
+					
+					<dict>
+						<string name="class">Modifiers::TriggerEffect</string>
+						<string name="trigger">kill</string>
+						<float name="chance">0.075</float>
+						<bool name="ignore-no-loot-units">true</bool>
+						
+						<dict name="effect">
+							<string name="class">SpawnUnit</string>
+							<array name="units">
+								<int>600</int><string>items/mana_shard.unit</string>
+								<int>350</int><string>items/mana_pyramid.unit</string>
+								<int>50</int><string>items/mana_sphere.unit</string>
+							</array>
+							<bool name="safe-spawn">true</bool>
+							<bool name="players-in-sight">true</bool>
+							<bool name="safe-ignore-target">true</bool>
+							<int name="spawn-dist">0</int>
+						</dict>
+					</dict>
+				</array>
 			</dict>
 		</array>
 	</dict>
@@ -876,7 +1001,7 @@
 				<bool name="target-self">true</bool>
 				<int name="timeout">250</int>
 
-				<array name ="effects">
+				<array name="effects">
 					<dict name="effect">
 						<string name="class">Nova</string>
 						<int name="projectiles">16</int>
@@ -962,7 +1087,7 @@
 	
 	<dict name="spiked-boots">
 		<string name="name">.item.spiked-boots.name</string>
-		<string name="desc">.item.spiked-boots.desc?dmg=25</string>
+		<string name="desc">.item.spiked-boots.desc?dmg=50</string>
 		<string name="quality">uncommon</string>
 		<int name="cost">750</int>
 		
@@ -973,14 +1098,23 @@
 			<int>100</int><vec4>36 204 12 12</vec4>
 		</array>
 
-		<dict name="modifier">
-			<string name="class">Modifiers::TriggerEffect</string>
-			<string name="trigger">collide</string>
-			<dict name="effect">
-				<string name="class">Damage</string>
-				<int name="physical">25</int>
+		<array name="modifiers">
+			<dict>
+				<string name="class">Modifiers::TriggerEffect</string>
+				<string name="trigger">collide</string>
+				<dict name="effect">
+					<string name="class">Damage</string>
+					<int name="physical">50</int>
+				</dict>
 			</dict>
-		</dict>
+			
+			<dict>
+				<string name="class">Modifiers::BuffImmune</string>
+				<array name="tags">
+					<string>slippery</string>
+				</array>
+			</dict>
+		</array>
 	</dict>
 	
 	<dict name="sphere-of-life">
@@ -1068,10 +1202,8 @@
 		</array>
 		
 		<array name="modifiers">
-			<dict>
-				<string name="class">Modifiers::Combo</string>
-				<int name="trigger-count">-2</int>
-			</dict>
+			<string name="class">Modifiers::Combo</string>
+			<int name="trigger-count">-2</int>
 			<dict>
 				<string name="class">Modifiers::Combo</string>
 				<dict name="modifier">
